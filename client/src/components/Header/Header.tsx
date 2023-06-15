@@ -1,10 +1,11 @@
 import './Styles.css'
-import { WebsiteLogo } from './components'
+import { SearchBar, WebsiteLogo } from './components'
 
 const Header = () => 
     <header>
-        <i className="fa-solid fa-bars"></i>
+        
         <WebsiteLogo />
+        <SearchBar />
     </header>
 
 export default Header
