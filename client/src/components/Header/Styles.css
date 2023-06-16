@@ -1,71 +1,65 @@
 header {
-    justify-content: space-between;
-    padding: 0 20px;
-    font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Common */
-
-/*
-    position: relative;
-    display: flex;
-    align-items: center;
-*/
 header, .websiteLogo, .searchBarContainer, .searchDiv, .profileContainer {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-/* End of Common */
-
-/* Logo */
-.websiteLogo > h1 {
-    letter-spacing: -3px;
-    margin: 0;
-    padding: 10px;
-}
-
-.fa-bars {
-    font-size: 30px;
-}
-/* End of Logo */
-
-/* Search Bar */
-.searchBarContainer {
-    justify-content: space-between;
-    border: solid gray 1px;
-    border-radius: 20px;
-    width: 500px;
-    height: 36px;
-    font-size: 18px;
-    overflow: hidden;
-}
-
-.searchBarContainer p {
-    margin: 5px 10px;
-}
-
-.searchDiv{
-    display: flex;
-    background-color: rgb(202, 202, 202);
-    height: 100%;
-    border-left: 1px gray solid;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .fa-solid {
-    font-size: 20px;
-    margin: auto 20px auto 10px;
+  font-size: 20px;
+  margin: auto 20px auto 10px;
+}
+
+/* End of Common */
+/* Logo */
+.websiteLogo > h1 {
+  letter-spacing: -3px;
+  margin: 0;
+  padding: 10px;
+}
+
+.fa-bars {
+  font-size: 30px;
+}
+
+/* End of Logo */
+/* Search Bar */
+.searchBarContainer {
+  justify-content: space-between;
+  border: solid rgb(195, 195, 195) 1px;
+  border-radius: 20px;
+  width: 500px;
+  height: 36px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.searchBarContainer p {
+  color: rgb(195, 195, 195);
+  margin: 5px 10px;
+}
+
+.searchDiv {
+  display: flex;
+  background-color: rgb(195, 195, 195);
+  height: 100%;
+  border-left: 1px rgb(195, 195, 195) solid;
 }
 
 /* End of search bar */
-
 /* Profile */
 .profileIcon {
-    border: solid black 1px;
-    font-size: 30px;
-    margin: 5px 10px;
-    padding: 0 5px;
-    border-radius: 50%;
+  border: solid black 1px;
+  font-size: 30px;
+  margin: 5px 10px;
+  padding: 0 5px;
+  border-radius: 50%;
 }
 
-/* End of Profile */
+/* End of Profile *//*# sourceMappingURL=Styles.css.map */

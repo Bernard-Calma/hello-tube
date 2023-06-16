@@ -1,0 +1,64 @@
+@import "../../variables/Variables.scss";
+
+header {
+    justify-content: space-between;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Common */
+header, .websiteLogo, .searchBarContainer, .searchDiv, .profileContainer {
+    @include container();
+}
+
+.fa-solid {
+    @include icon();
+}
+/* End of Common */
+
+/* Logo */
+.websiteLogo > h1 {
+    letter-spacing: -3px;
+    margin: 0;
+    padding: 10px;
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+/* End of Logo */
+
+/* Search Bar */
+.searchBarContainer {
+    justify-content: space-between;
+    border: solid $borderLinesColor 1px;
+    border-radius: 20px;
+    width: 500px;
+    height: 36px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.searchBarContainer p {
+    color: $borderLinesColor;
+    margin: 5px 10px;
+}
+
+.searchDiv{
+    display: flex;
+    background-color: $borderLinesColor;
+    height: 100%;
+    border-left: 1px $borderLinesColor solid;
+}
+/* End of search bar */
+
+/* Profile */
+.profileIcon {
+    border: solid black 1px;
+    font-size: 30px;
+    margin: 5px 10px;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+/* End of Profile */
