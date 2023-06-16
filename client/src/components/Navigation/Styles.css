@@ -4,8 +4,9 @@ nav {
 }
 
 /* Common */
-.navHome, .navVideos, .navSettings {
+.navHome, .navVideos, .navSettings, .navExplore {
   border-bottom: solid rgb(195, 195, 195) 1px;
+  padding: 10px 0;
 }
 
 /* End of Common */

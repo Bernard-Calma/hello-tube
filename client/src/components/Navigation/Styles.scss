@@ -6,8 +6,9 @@ nav {
 }
 
 /* Common */
-.navHome, .navVideos, .navSettings {
+.navHome, .navVideos, .navSettings, .navExplore {
     border-bottom: solid $borderLinesColor 1px;
+    padding: 10px 0;
 }
 /* End of Common */
 
