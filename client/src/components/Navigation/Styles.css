@@ -1,10 +1,24 @@
 nav {
+  height: 95vh;
   width: 15%;
   padding: 10px 20px;
+  overflow-y: scroll;
+}
+
+nav::-webkit-scrollbar {
+  color: gray;
+  width: 10px;
+}
+
+/* Handle */
+nav::-webkit-scrollbar-thumb {
+  background: gray;
+  border: 2px rgb(23, 23, 23) solid;
+  border-radius: 10px;
 }
 
 /* Common */
-.navHome, .navVideos, .navSettings, .navExplore {
+.navHome, .navVideos, .navSettings, .navExplore, .navSubs {
   border-bottom: solid rgb(195, 195, 195) 1px;
   padding: 10px 0;
 }
