@@ -1,0 +1,22 @@
+main, .recommendationContainer, .videosContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-items: start;
+}
+
+/* Videos Container */
+.videosContainer {
+  flex: 1;
+  flex-direction: column;
+}
+
+/* End of Videos Container */
+/* Recommendation */
+.recommendationContainer {
+  border: red dotted 3px;
+  flex: 1;
+  width: 100%;
+}
+
+/* End of Recommendation *//*# sourceMappingURL=Styles.css.map */
