@@ -1,18 +1,52 @@
+import { Icon } from "../../Common";
+
 const Settings = () => {
+    const solidIcons: 
+    {
+        id: number,
+        containerClass: string,
+        icon: string,
+        text: string
+    }[] = [       
+        {
+            id: 0,
+            containerClass: "navIcons",
+            icon: "gear",
+            text: "Settings"
+        },
+        {
+            id: 1,
+            containerClass: "navIcons",
+            icon: "font-awesome",
+            text: "Report History"
+        },
+        {
+            id: 2,
+            containerClass: "navIcons",
+            icon: "circle-question",
+            text: "Help"
+        },
+        {
+            id: 3,
+            containerClass: "navIcons",
+            icon: "message",
+            text: "Send Feedback"
+        },
+    ]
+    
     return(
-        <div className="navSettings">
-            <div className="navIcons">
-            <i className="fa-solid fa-gear"/><span>Settings</span>
-            </div>
-            <div className="navIcons">
-                <i className="fa-solid fa-font-awesome"/><span>Report History</span>
-            </div>
-            <div className="navIcons">
-                <i className="fa-solid fa-circle-question"/><span>Help</span>
-            </div>
-            <div className="navIcons">
-                <i className="fa-solid fa-message"/><span>Send Feedback</span>
-            </div>
+        <div className="navHome">
+            {
+                solidIcons.map(icon =>  
+                    <Icon 
+                        key = {icon.id}
+                        containerClass={icon.containerClass}
+                        icon = {icon.icon}
+                        style = "solid"
+                        text = {icon.text}
+                    />
+                )
+            }
         </div>
     )
 }
