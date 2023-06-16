@@ -1,21 +1,58 @@
+import { Icon } from "../../Common";
+
 const Videos = () => {
+    const solidIcons: 
+    {
+        id: number,
+        containerClass: string,
+        icon: string,
+        text: string
+    }[] = [       
+        {
+            id: 0,
+            containerClass: "navIcons",
+            icon: "film",
+            text: "Library"
+        },
+        {
+            id: 1,
+            containerClass: "navIcons",
+            icon: "clock-rotate-left",
+            text: "History"
+        },
+        {
+            id: 2,
+            containerClass: "navIcons",
+            icon: "file-video",
+            text: "Your Videos"
+        },
+        {
+            id: 3,
+            containerClass: "navIcons",
+            icon: "heart",
+            text: "Liked Videos"
+        },
+        {
+            id: 4,
+            containerClass: "navIcons",
+            icon: "star",
+            text: "Favourites"
+        }
+    ]
+    
     return(
         <div className="navVideos">
-            <div className="navIcons">
-            <i className="fa-solid fa-film"/> <span>Library</span>
-            </div>
-            <div className="navIcons">
-            <i className="fa-solid fa-clock-rotate-left"></i> <span> History</span>
-            </div>
-            <div className="navIcons">
-                <i className="fa-solid fa-file-video"/> <span>Your Videos</span>
-            </div>
-            <div className="navIcons">
-                <i className="fa-solid fa-heart"/> <span> Liked Videos</span>
-            </div>
-            <div className="navIcons">
-                <i className="fa-solid fa-star"/> <span>Favourites</span>
-            </div>
+            {
+                solidIcons.map(icon =>  
+                    <Icon 
+                        key = {icon.id}
+                        containerClass={icon.containerClass}
+                        icon = {icon.icon}
+                        style = "solid"
+                        text = {icon.text}
+                    />
+                )
+            }
         </div>
     )
 }
