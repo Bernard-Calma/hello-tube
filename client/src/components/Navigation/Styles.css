@@ -3,10 +3,16 @@ nav {
     padding: 10px 20px;
 }
 
-/* Home */
-.navHome {
+/* Common */
+/* 
+    border-bottom: solid rgb(195, 195, 195) 1px;    
+ */
+.navHome, .navVideos {
     border-bottom: solid rgb(195, 195, 195) 1px;
 }
+/* End of Common */
+
+/* Home */
 .navIcons {
     display: flex;
     justify-content: space-between;
@@ -25,3 +31,6 @@ nav {
     font-weight: 500px;
 }
 /* End of Home */
+
+/* Videos */
+/* End of Videos */
