@@ -1,36 +1,37 @@
 nav {
-    width: 10%;
-    padding: 10px 20px;
+  width: 15%;
+  padding: 10px 20px;
 }
 
 /* Common */
-/* 
-    border-bottom: solid rgb(195, 195, 195) 1px;    
- */
-.navHome, .navVideos {
-    border-bottom: solid rgb(195, 195, 195) 1px;
+.navHome, .navVideos, .navSettings {
+  border-bottom: solid rgb(195, 195, 195) 1px;
 }
-/* End of Common */
 
+/* End of Common */
 /* Home */
 .navIcons {
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navIcons > i {
-    flex: 1;
-    margin-left: 0;
+  flex: 1;
+  margin-left: 0;
 }
 
 .navIcons > span {
-    flex: 2;
-    text-align: start;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2rem;
-    font-weight: 500px;
+  flex: 2;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  font-weight: 500px;
 }
-/* End of Home */
 
+/* End of Home */
 /* Videos */
 /* End of Videos */
+/* Settings */
+/* End of Settings *//*# sourceMappingURL=Styles.css.map */

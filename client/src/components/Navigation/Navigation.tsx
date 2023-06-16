@@ -1,11 +1,12 @@
 import "./Styles.css"
-import { Home, Videos } from "./components";
+import { Home, Settings, Videos } from "./components";
 
 const Navigation = () => {
     return(
         <nav>
             <Home />
             <Videos />
+            <Settings />
         </nav>
     )
 }

@@ -1,0 +1,39 @@
+@import "../../variables/Variables.scss";
+
+nav {
+    width: 15%;
+    padding: 10px 20px;
+}
+
+/* Common */
+.navHome, .navVideos, .navSettings {
+    border-bottom: solid $borderLinesColor 1px;
+}
+/* End of Common */
+
+/* Home */
+.navIcons {
+    @include container();
+    justify-content: space-between;
+}
+
+.navIcons > i {
+    flex: 1;
+    margin-left: 0;
+}
+
+.navIcons > span {
+    flex: 2;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    font-weight: 500px;
+}
+/* End of Home */
+
+/* Videos */
+/* End of Videos */
+
+/* Settings */
+
+/* End of Settings */
