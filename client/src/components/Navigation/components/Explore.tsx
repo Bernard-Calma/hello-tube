@@ -1,9 +1,14 @@
+import { Icon } from "../../Common";
+
 const Explore = () => {
     return(
         <div className="navExplore">
-            <div className="navIcons">
-                <i className="fa-solid fa-fire"/> <span>Trending</span>
-            </div>
+            <Icon 
+                containerClass="navIcons"
+                icon="fire"
+                style="solid"
+                text="Trending"
+            />
             <div className="navIcons">
                 <i className="fa-solid fa-bag-shopping"/> <span>Shopping</span>
             </div>
