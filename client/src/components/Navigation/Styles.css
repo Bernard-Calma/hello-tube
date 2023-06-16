@@ -1,0 +1,27 @@
+nav {
+    width: 10%;
+    padding: 10px 20px;
+}
+
+/* Home */
+.navHome {
+    border-bottom: solid rgb(195, 195, 195) 1px;
+}
+.navIcons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navIcons > i {
+    flex: 1;
+    margin-left: 0;
+}
+
+.navIcons > span {
+    flex: 2;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    font-weight: 500px;
+}
+/* End of Home */
