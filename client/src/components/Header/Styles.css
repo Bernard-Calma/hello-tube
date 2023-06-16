@@ -1,16 +1,24 @@
 header {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.websiteLogo {
+/* Common */
+
+/*
+    position: relative;
+    display: flex;
+    align-items: center;
+*/
+header, .websiteLogo, .searchBarContainer, .searchDiv, .profileContainer {
+    position: relative;
     display: flex;
     align-items: center;
 }
+/* End of Common */
 
+/* Logo */
 .websiteLogo > h1 {
     letter-spacing: -3px;
     margin: 0;
@@ -20,14 +28,12 @@ header {
 .fa-bars {
     font-size: 30px;
 }
+/* End of Logo */
 
 /* Search Bar */
 .searchBarContainer {
-    position: relative;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    border: solid black 1px;
+    border: solid gray 1px;
     border-radius: 20px;
     width: 500px;
     height: 36px;
@@ -41,13 +47,25 @@ header {
 
 .searchDiv{
     display: flex;
-    position: relative;
     background-color: rgb(202, 202, 202);
     height: 100%;
-    align-items: center;
-    border-left: 1px black solid;
+    border-left: 1px gray solid;
 }
 
-.fa-magnifying-glass {
+.fa-solid {
+    font-size: 20px;
     margin: auto 20px auto 10px;
 }
+
+/* End of search bar */
+
+/* Profile */
+.profileIcon {
+    border: solid black 1px;
+    font-size: 30px;
+    margin: 5px 10px;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+/* End of Profile */

@@ -1,11 +1,11 @@
 import './Styles.css'
-import { SearchBar, WebsiteLogo } from './components'
+import { Profile, SearchBar, WebsiteLogo } from './components'
 
 const Header = () => 
     <header>
-        
         <WebsiteLogo />
         <SearchBar />
+        <Profile />
     </header>
 
 export default Header
