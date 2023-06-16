@@ -16,6 +16,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 10px 0;
 }
 
 .navIcons > i {
@@ -35,4 +36,12 @@ nav {
 /* Videos */
 /* End of Videos */
 /* Settings */
-/* End of Settings *//*# sourceMappingURL=Styles.css.map */
+/* End of Settings */
+/* Footer */
+footer > p {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: start;
+}
+
+/* End of Footer *//*# sourceMappingURL=Styles.css.map */

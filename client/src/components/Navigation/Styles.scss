@@ -16,7 +16,9 @@ nav {
 .navIcons {
     @include container();
     justify-content: space-between;
+    margin: 10px 0;
 }
+
 
 .navIcons > i {
     flex: 1;
@@ -38,3 +40,11 @@ nav {
 /* Settings */
 
 /* End of Settings */
+
+/* Footer */
+footer > p {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: start;
+}
+/* End of Footer */

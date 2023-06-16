@@ -1,5 +1,5 @@
 import "./Styles.css"
-import { Explore, Home, Settings, Videos } from "./components";
+import { Explore, Footer, Home, Settings, Videos } from "./components";
 
 const Navigation = () => {
     return(
@@ -8,6 +8,7 @@ const Navigation = () => {
             <Videos />
             <Explore />
             <Settings />
+            <Footer />
         </nav>
     )
 }
