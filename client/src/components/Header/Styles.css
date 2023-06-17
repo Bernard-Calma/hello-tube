@@ -39,7 +39,6 @@ header, .websiteLogo, .searchBarContainer, .searchDiv, .profileContainer {
   font-size: 18px;
   overflow: hidden;
 }
-
 .searchBarContainer p {
   color: rgb(195, 195, 195);
   margin: 5px 10px;

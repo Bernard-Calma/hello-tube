@@ -37,11 +37,11 @@ header, .websiteLogo, .searchBarContainer, .searchDiv, .profileContainer {
     height: 36px;
     font-size: 18px;
     overflow: hidden;
-}
 
-.searchBarContainer p {
-    color: $borderLinesColor;
-    margin: 5px 10px;
+    p {
+        color: $borderLinesColor;
+        margin: 5px 10px;
+    }
 }
 
 .searchDiv{

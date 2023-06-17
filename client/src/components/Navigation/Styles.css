@@ -32,13 +32,11 @@ nav::-webkit-scrollbar-thumb {
   justify-content: space-between;
   margin: 10px 0;
 }
-
-.navIcons > i {
+.navIcons i {
   flex: 1;
   margin-left: 0;
 }
-
-.navIcons > span {
+.navIcons span {
   flex: 2;
   text-align: start;
   font-family: Arial, Helvetica, sans-serif;
