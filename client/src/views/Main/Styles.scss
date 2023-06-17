@@ -2,7 +2,7 @@
 
 main, .recommendationContainer, .videosContainer {
     @include container();
-    align-items: start;
+    align-items: flex-start;
 }
 
 /* Videos Container */
@@ -17,5 +17,9 @@ main, .recommendationContainer, .videosContainer {
     border: red dotted 3px;
     flex: 1;
     width: 100%;
+
+    .videoContainer {
+        margin: 10px;
+    }
 }
 /* End of Recommendation */
