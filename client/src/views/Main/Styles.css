@@ -1,4 +1,4 @@
-main, .recommendationContainer, .videosContainer {
+main, .recommendationContainer, .videosContainer, .videoListContainer {
   position: relative;
   display: flex;
   align-items: center;
@@ -9,14 +9,16 @@ main, .recommendationContainer, .videosContainer {
 .videosContainer {
   flex: 1;
   flex-direction: column;
+  margin: 0 10px;
 }
 
 /* End of Videos Container */
 /* Recommendation */
-.recommendationContainer {
+.recommendationContainer, .videoListContainer {
   flex: 1;
   flex-wrap: wrap;
   width: 100%;
+  border-bottom: solid rgb(195, 195, 195) 5px;
 }
 
 /* End of Recommendation *//*# sourceMappingURL=Styles.css.map */

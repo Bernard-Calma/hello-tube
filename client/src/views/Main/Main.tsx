@@ -1,12 +1,18 @@
 import Navigation from '../../components/Navigation/Navigation';
-import { Recommendation } from './components';
-
+import { Recommendation, VideoList } from './components';
+import {videoList} from '../../assets/data/videoList';
 import './Styles.css'
-const Main = () => <main>
-    <Navigation />
-    <div className='videosContainer'>
-        <Recommendation />
-    </div>
-</main>
+
+const Main: React.FC = () => {
+    return(
+        <main>
+            <Navigation />
+            <div className='videosContainer'>
+                <Recommendation />
+                <VideoList videoList = {videoList}/>
+            </div>
+        </main>
+    )
+}
 
 export default Main;

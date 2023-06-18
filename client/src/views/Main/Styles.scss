@@ -1,6 +1,6 @@
 @import "../../variables/Variables.scss";
 
-main, .recommendationContainer, .videosContainer {
+main, .recommendationContainer, .videosContainer, .videoListContainer {
     @include container();
     align-items: flex-start;
 }
@@ -9,14 +9,16 @@ main, .recommendationContainer, .videosContainer {
 .videosContainer {
     flex: 1;
     flex-direction: column;
+    margin: 0 10px;
 }
 /* End of Videos Container */
 
 /* Recommendation */
-.recommendationContainer {
+.recommendationContainer, .videoListContainer {
     // border: red dotted 3px;
     flex: 1;
     flex-wrap: wrap;
     width: 100%;
+    border-bottom: solid $borderLinesColor 5px;
 }
 /* End of Recommendation */
