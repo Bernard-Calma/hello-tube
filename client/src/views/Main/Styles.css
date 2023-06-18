@@ -14,12 +14,9 @@ main, .recommendationContainer, .videosContainer {
 /* End of Videos Container */
 /* Recommendation */
 .recommendationContainer {
-  border: red dotted 3px;
   flex: 1;
+  flex-wrap: wrap;
   width: 100%;
-}
-.recommendationContainer .videoContainer {
-  margin: 10px;
 }
 
 /* End of Recommendation *//*# sourceMappingURL=Styles.css.map */

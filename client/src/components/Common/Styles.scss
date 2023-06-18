@@ -1,0 +1,45 @@
+.profileIcon {
+    border: solid black 1px;
+    width: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0 5px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.videoContainer {
+    margin: 25px 10px;
+    width: 320px;
+    height: 240px;
+    text-align: start;
+
+    .videoDetails {
+        display: flex;
+        flex-direction: row;
+
+        .videoMeta {
+            .videoTitle {
+                margin: 0;
+            }
+        
+            .videoUploadedBy {
+                margin: 0;
+            }
+
+            .videoViews, .videoUploaded {
+                display: inline;
+            }
+
+            .videoUploaded {
+                padding: 0 5px;
+            }
+        }
+    }
+
+    img {
+        width: 100% ;
+    }
+}
