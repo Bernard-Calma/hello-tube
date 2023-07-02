@@ -1,3 +1,8 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .profileIcon {
   border: solid black 1px;
   width: 25px;
