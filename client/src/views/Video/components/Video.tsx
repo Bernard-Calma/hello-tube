@@ -5,7 +5,7 @@ const videoNotWorking = require("../../../assets/images/VideoNotWorking.png")
 
 const Video:React.FC = () => {
     const {videoId}: any = useParams();
-    const {id, title, uploadedBy, image, views, uploaded} = videoList[videoId - 1]
+    const {title, uploadedBy, image, views, uploaded} = videoList[videoId - 1]
     
     const handleImageError = (e: any) => {
         e.target.src = videoNotWorking;

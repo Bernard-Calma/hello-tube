@@ -1,14 +1,13 @@
 interface IconProps {
     containerClass: string;
     icon: string;
-    style: string; 
     text: string;
 }
 
-const Icon = ({containerClass, style, icon, text}: IconProps) => {
+const Icon = ({containerClass, icon, text}: IconProps) => {
     return(
         <div className={containerClass}>
-            <i className={`fa-${style} fa-${icon}`}/><span>{text}</span>
+            <i className={`fa-solid fa-${icon}`}/><span>{text}</span>
         </div>
     )
 }

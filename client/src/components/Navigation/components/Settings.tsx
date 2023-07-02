@@ -42,7 +42,6 @@ const Settings = () => {
                         key = {icon.id}
                         containerClass={icon.containerClass}
                         icon = {icon.icon}
-                        style = "solid"
                         text = {icon.text}
                     />
                 )
