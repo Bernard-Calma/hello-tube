@@ -15,7 +15,7 @@ interface iVideoDetails {
     }
 }
 
-const Video = (props: iVideoDetails) => {
+const VideoThumbnail = (props: iVideoDetails) => {
     const {title, uploadedBy, image, views, uploaded} = props.videoData;
     
     const handleImageError = (e: any) => {
@@ -43,4 +43,4 @@ const Video = (props: iVideoDetails) => {
     )
 }
 
-export default Video;
+export default VideoThumbnail;

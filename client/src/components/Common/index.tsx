@@ -1,9 +1,9 @@
 import Icon from './Icon'
-import Video from './Video'
+import VideoThumbnail from './VideoThumbnail'
 import ProfileIcon from './ProfileIcon'
 
 export {
     Icon,
-    Video,
+    VideoThumbnail,
     ProfileIcon
 }

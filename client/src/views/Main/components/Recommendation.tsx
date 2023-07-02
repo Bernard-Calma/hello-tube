@@ -1,4 +1,4 @@
-import { Video } from "../../../components/Common";
+import { VideoThumbnail } from "../../../components/Common";
 
 const Recommendation = () => {
 
@@ -70,7 +70,7 @@ const Recommendation = () => {
     return (
         <div className="recommendationContainer">
             { videoList.map(video => 
-                    <Video 
+                    <VideoThumbnail 
                         key = {video.id}
                         videoData = {video} 
                     />
