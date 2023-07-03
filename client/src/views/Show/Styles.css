@@ -17,15 +17,15 @@
 }
 .showContainer .showVideoContainer .videoDetails .videoEngagement {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
 }
 .showContainer .showVideoContainer .videoDetails .videoEngagement .videoUploadedBy {
-  flex: 1;
   text-align: start;
   align-self: flex-start;
   margin: 0;
+  width: 20%;
 }
 .showContainer .showVideoContainer .videoDetails .videoEngagement .subscribeButton {
   background-color: black;
@@ -36,29 +36,36 @@
 }
 .showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  flex: 2;
   margin: 0;
+  margin-left: auto;
+  width: 50%;
 }
 .showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer div {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
   padding: 5px 10px;
   background-color: rgb(205, 205, 205);
   border-radius: 20px;
-}
-.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .likeContainer {
-  margin-left: 20px;
+  margin: 0 10px;
 }
 .showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer i {
   font-size: 25px;
   margin: 0 5px;
   color: rgb(87, 87, 87);
+  height: 24px;
+  width: 24px;
 }
-.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer i span {
-  color: black;
-  font-size: 20px;
-  padding: 0 5px;
-  border-right: solid rgb(227, 227, 227) 0.5px;
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .likeContainer {
+  margin-left: 20px;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .likes {
+  margin-right: 5px;
+  padding-right: 10px;
+  border-right: solid rgb(146, 146, 146) 0.5px;
 }
 .showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .shareContainer {
   display: flex;

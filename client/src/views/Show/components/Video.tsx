@@ -25,14 +25,25 @@ const Video:React.FC = () => {
                     <p className="subscribeButton">Subscribe</p>
                     <div className="engagementContainer">
                         <div className="likeContainer">
-                            <i className="fa-solid fa-thumbs-up"><span>100</span></i>
+                            <i className="fa-solid fa-thumbs-up"/>
+                            <span className="likes">100</span>
                             <i className="fa-solid fa-thumbs-down fa-flip-horizontal"/>
                         </div>
                         <div className="shareContainer">
                             <i className="fa-solid fa-share"/>
                             <span>Share</span>
                         </div>
-                        
+
+                        <div className="downloadContainer">
+                            <i className="fa-solid fa-download"/>
+                            <span>Download</span>
+                        </div>
+
+                        <div className="saveContainer">
+                            <i className="fa-solid fa-bars-staggered"/>
+                            <span>Save</span>
+                        </div>
+
                         <div className="options">
                             <i className="fa-solid fa-ellipsis"></i>
                         </div>
