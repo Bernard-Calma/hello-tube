@@ -7,8 +7,9 @@ import {
 
 import './index.css';
 import App from './App';
-import Video from './views/Video/components/Video';
+import Video from './views/Show/components/Video';
 import Main from './views/Main/Main';
+import Show from './views/Show/Show';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "watch/:videoId",
-        element: <Video /> 
+        element: <Show /> 
       }
     ]
   }

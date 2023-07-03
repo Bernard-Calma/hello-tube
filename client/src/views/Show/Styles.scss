@@ -1,0 +1,115 @@
+@import "../../variables/Variables.scss";
+
+.showContainer {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    min-height: 60vh;
+
+    .showVideoContainer {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+
+        img {
+            width: 80vw;
+        }
+
+        .videoDetails {
+
+            h2 {
+                text-align: start;
+                margin: 0;
+            }
+
+            .videoEngagement {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding-top: 10px;
+
+                .videoUploadedBy {
+                    flex: 1;
+                    text-align: start;
+                    align-self: flex-start;
+                    margin: 0;
+                }
+
+                .subscribeButton {
+                    background-color: black;
+                    color: white;
+                    margin: 0 10px;
+                    padding: 10px;
+                    border-radius: 20px;
+                    
+                }
+
+                .engagementContainer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex: 2;
+                    margin: 0;
+    
+                    div {
+                        padding: 5px 10px;
+                        background-color: rgb(205, 205, 205);
+                        border-radius: 20px;
+                    }
+
+                    .likeContainer {
+                        margin-left: 20px;
+                    }
+
+                    i {
+                        font-size: 25px;
+                        margin: 0 5px;
+                        color: rgb(87, 87, 87);
+
+                        span{
+                            color: black;
+                            font-size: 20px;
+                            padding: 0 5px;
+                            border-right: solid rgb(227, 227, 227) 0.5px;
+                        }
+                    }
+    
+                    .shareContainer {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .options {
+                        margin: 0;
+                        padding: 3px 0;
+
+                        i {
+                            color: black;
+                        }
+                    }
+                }
+
+            }
+
+            .videoMeta {
+                display: grid;
+                grid-template:  2fr/ 1fr 1fr 5fr;
+                text-align: start;
+
+                background-color: rgb(205, 205, 205);
+                border-radius: 5px;
+                padding: 10px;
+
+                p {
+                    margin: 0;
+                };
+
+                .videoDescription {
+                    grid-column: span 3;
+                    font-weight: normal;
+                    min-height: 50px;
+                }
+            }
+        }
+    }
+}
+

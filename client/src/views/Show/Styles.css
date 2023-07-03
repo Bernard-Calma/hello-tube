@@ -1,0 +1,89 @@
+.showContainer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  min-height: 60vh;
+}
+.showContainer .showVideoContainer {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.showContainer .showVideoContainer img {
+  width: 80vw;
+}
+.showContainer .showVideoContainer .videoDetails h2 {
+  text-align: start;
+  margin: 0;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 10px;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .videoUploadedBy {
+  flex: 1;
+  text-align: start;
+  align-self: flex-start;
+  margin: 0;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .subscribeButton {
+  background-color: black;
+  color: white;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 2;
+  margin: 0;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer div {
+  padding: 5px 10px;
+  background-color: rgb(205, 205, 205);
+  border-radius: 20px;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .likeContainer {
+  margin-left: 20px;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer i {
+  font-size: 25px;
+  margin: 0 5px;
+  color: rgb(87, 87, 87);
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer i span {
+  color: black;
+  font-size: 20px;
+  padding: 0 5px;
+  border-right: solid rgb(227, 227, 227) 0.5px;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .shareContainer {
+  display: flex;
+  align-items: center;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .options {
+  margin: 0;
+  padding: 3px 0;
+}
+.showContainer .showVideoContainer .videoDetails .videoEngagement .engagementContainer .options i {
+  color: black;
+}
+.showContainer .showVideoContainer .videoDetails .videoMeta {
+  display: grid;
+  grid-template: 2fr/1fr 1fr 5fr;
+  text-align: start;
+  background-color: rgb(205, 205, 205);
+  border-radius: 5px;
+  padding: 10px;
+}
+.showContainer .showVideoContainer .videoDetails .videoMeta p {
+  margin: 0;
+}
+.showContainer .showVideoContainer .videoDetails .videoMeta .videoDescription {
+  grid-column: span 3;
+  font-weight: normal;
+  min-height: 50px;
+}/*# sourceMappingURL=Styles.css.map */
