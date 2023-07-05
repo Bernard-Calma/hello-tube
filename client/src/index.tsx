@@ -5,6 +5,10 @@ import {
   RouterProvider 
 } from 'react-router-dom';
 
+import { store } from './store';
+import { Provider } from 'react-redux';
+
+
 import './index.css';
 import App from './App';
 import Video from './views/Show/components/Video';
@@ -33,7 +37,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 
