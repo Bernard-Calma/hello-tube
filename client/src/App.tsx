@@ -12,7 +12,7 @@ import { AppDispatch } from "./store";
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   useEffect(() => {
-    dispatch(getVideo("Test"))
+    dispatch(getVideo())
   },[])
   return(
     <div className='App'>
