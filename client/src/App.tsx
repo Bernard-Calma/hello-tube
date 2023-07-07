@@ -6,12 +6,13 @@ import {
 
 import './App.css';
 import Header from './components/Header/Header';
-import { getVideos } from "./features/youtube/youtubeSlice";
+import { getVideo } from "./features/youtube/youtubeSlice";
+import { AppDispatch } from "./store";
 
 const App: React.FC = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   useEffect(() => {
-    // dispatch(getVideos())
+    dispatch(getVideo("Test"))
   },[])
   return(
     <div className='App'>
