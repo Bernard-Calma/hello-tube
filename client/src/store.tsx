@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
+import youtubeRducer from "./features/youtube/youtubeSlice"
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    youtube:  youtubeRducer,
+  },
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
