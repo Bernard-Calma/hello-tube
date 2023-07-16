@@ -9,7 +9,7 @@ const Main: React.FC = () => {
             <Navigation />
             <div className='videosContainer'>
                 <Recommendation />
-                <VideoList videoList = {videoList}/>
+                <VideoList/>
             </div>
         </main>
     )

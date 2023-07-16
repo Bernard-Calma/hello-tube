@@ -48,9 +48,9 @@ export type Youtube = {
             high: {
                 url: string;
             };
-            channelTitle: string;
-            liveBroadcastContent: string;
-            publishTime: Date;
         };
+        channelTitle: string;
+        liveBroadcastContent: string;
+        publishTime: string;
     };
 };

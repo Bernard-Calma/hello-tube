@@ -1,14 +1,18 @@
+import { useAppSelector } from "../../../hooks";
+
 import { VideoThumbnail } from "../../../components/Common";
-import { videoListType } from "../../../assets/data/videoList";
+import { Youtube } from "../../../features/youtube/types";
 
+const VideoList = () => {
+    const {
+        videos
+    } = useAppSelector(store => store.youtube)
 
-const VideoList = ({videoList}: videoListType) => {
     return(
         <div className="videoListContainer">
-            { videoList.map(video => 
-                    <VideoThumbnail 
-                        key = {video.id}
-                        videoData = {video} 
+            { videos.map(video => 
+                     <VideoThumbnail
+                        videoData = {video}
                     />
                 )
             }

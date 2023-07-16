@@ -11,7 +11,6 @@ import { Provider } from 'react-redux';
 
 import './index.css';
 import App from './App';
-import Video from './views/Show/components/Video';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
 

@@ -6,9 +6,13 @@ import { Youtube } from "./types";
 
 type RequestState = "pending" | "fulfilled" | "rejected"
 
+type Action = {
+    type: string,
+    payload?: Array<Youtube>
+}
 
 export interface youtubeState {
-    videos: Array<{}>,
+    videos: Array<Youtube>,
     status: RequestState
 }
 
@@ -24,10 +28,10 @@ export const getVideo = createAsyncThunk<Array<Youtube>>("youtube/getvideos", as
             method: "GET",
             url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmoen-O_vRoOlDgf4uHMBTipldhNTgSTg&q=react&part=snippet&maxResults=5`,
         })
-        console.log(res.data.items[0])
+        // console.log(res.data.items[0])
         return res.data.items
     } catch (err) {
-        console.log("Add Account Error: ", err)
+        // console.log("Add Account Error: ", err)
         return rejectWithValue("Error getting bills")
     }
 })
@@ -40,14 +44,14 @@ export const youtubeSlice = createSlice({
     },
     extraReducers: builder => {
         builder
-        .addCase(getVideo.pending, (state, action) => {
+        .addCase(getVideo.pending, state=> {
             state.status = "pending";
         })
-        .addCase(getVideo.fulfilled, (state, action) => {
+        .addCase(getVideo.fulfilled, (state, {payload}) => {
             state.status = "fulfilled";
-            state.videos = action.payload
+            state.videos = payload
         })
-        .addCase(getVideo.rejected, (state, action) => {
+        .addCase(getVideo.rejected, state=> {
             state.status = "rejected";
         })
     }

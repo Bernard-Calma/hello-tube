@@ -69,13 +69,13 @@ const Recommendation = () => {
     }]
     return (
         <div className="recommendationContainer">
-            { videoList.map(video => 
+            {/* { videoList.map(video => 
                     <VideoThumbnail 
                         key = {video.id}
                         videoData = {video} 
                     />
                 )
-            }
+            } */}
         </div>
     )
 }
