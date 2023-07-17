@@ -20,5 +20,9 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
     flex-wrap: wrap;
     width: 100%;
     border-bottom: solid $borderLinesColor 5px;
+
+    a {
+        margin: auto;
+    }
 }
 /* End of Recommendation */

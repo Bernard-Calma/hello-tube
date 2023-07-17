@@ -20,5 +20,8 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
   width: 100%;
   border-bottom: solid rgb(195, 195, 195) 5px;
 }
+.recommendationContainer a, .videoListContainer a {
+  margin: auto;
+}
 
 /* End of Recommendation *//*# sourceMappingURL=Styles.css.map */

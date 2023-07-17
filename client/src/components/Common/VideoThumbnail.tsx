@@ -3,8 +3,7 @@ import ProfileIcon from "./ProfileIcon";
 import "./Styles.css"
 import { Youtube } from "../../features/youtube/types";
 import { Link } from "react-router-dom";
-
-const videoNotWorking = require("../../assets/images/VideoNotWorking.png")
+import { videoNotWorking } from "../../assets/images";
 
 const VideoThumbnail = (props: any) => {
     // console.log(props)

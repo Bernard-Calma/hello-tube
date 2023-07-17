@@ -18,7 +18,7 @@ a {
 .videoContainer {
   margin: 25px 10px;
   width: 320px;
-  height: 240px;
+  height: 300px;
   text-align: start;
 }
 .videoContainer .videoDetails {
@@ -27,6 +27,7 @@ a {
 }
 .videoContainer .videoDetails .videoMeta .videoTitle {
   margin: 0;
+  font-size: 1em;
 }
 .videoContainer .videoDetails .videoMeta .videoUploadedBy {
   margin: 0;
@@ -40,4 +41,6 @@ a {
 .videoContainer img {
   width: 100%;
   border-radius: 10px;
+  width: 300px;
+  height: 200px;
 }/*# sourceMappingURL=Styles.css.map */
