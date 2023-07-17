@@ -1,7 +1,5 @@
 import { useAppSelector } from "../../../hooks";
-
 import { VideoThumbnail } from "../../../components/Common";
-import { Youtube } from "../../../features/youtube/types";
 
 const VideoList = () => {
     const {
@@ -12,6 +10,7 @@ const VideoList = () => {
         <div className="videoListContainer">
             { videos.map(video => 
                      <VideoThumbnail
+                        key = {video.etag}
                         videoData = {video}
                     />
                 )

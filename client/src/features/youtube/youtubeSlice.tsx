@@ -1,15 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
 import { Youtube } from "./types";
 
 type RequestState = "pending" | "fulfilled" | "rejected"
-
-type Action = {
-    type: string,
-    payload?: Array<Youtube>
-}
 
 export interface youtubeState {
     videos: Array<Youtube>,
