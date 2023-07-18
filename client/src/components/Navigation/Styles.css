@@ -3,6 +3,7 @@ nav {
   width: 240px;
   padding: 10px 20px;
   overflow-y: scroll;
+  position: fixed;
 }
 
 nav::-webkit-scrollbar {
