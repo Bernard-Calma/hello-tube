@@ -7,12 +7,14 @@ type RequestState = "pending" | "fulfilled" | "rejected"
 
 export interface youtubeState {
     videos: Array<Youtube>,
+    showVideo?: Youtube | undefined,
     status: RequestState
 }
 
 
 const initialState: youtubeState = {
     videos: [],
+    showVideo: undefined,
     status: "pending"
 }
 
@@ -34,7 +36,10 @@ export const youtubeSlice = createSlice({
     name: "youtube",
     initialState,
     reducers: {
-
+        setShowVideo: (state, {payload}) => {
+            console.log(payload)
+            state.showVideo = payload
+        }
     },
     extraReducers: builder => {
         builder
@@ -51,6 +56,8 @@ export const youtubeSlice = createSlice({
     }
 })
 
-
+export const {
+    setShowVideo
+} = youtubeSlice.actions
 
 export default youtubeSlice.reducer;

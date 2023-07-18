@@ -6,11 +6,14 @@ import "./Styles.css"
 import { Youtube } from "../../features/youtube/types";
 import { Link } from "react-router-dom";
 import { videoNotWorking } from "../../assets/images";
+import { useAppDispatch } from "../../hooks";
+import { setShowVideo } from "../../features/youtube/youtubeSlice";
 
 TimeAgo.addDefaultLocale(en)
 const timeAgo = new TimeAgo('en-US')
 
 const VideoThumbnail = (props: any) => {
+    const dispatch = useAppDispatch();
     // console.log(props)
     const videoProps: Youtube = props.videoData
     const {
@@ -25,13 +28,18 @@ const VideoThumbnail = (props: any) => {
     } = snippet
 
     const {url} = thumbnails.high
-    console.log(videoProps) 
+    // console.log(videoProps)
 
     const handleImageError = (e: any) => {
        e.target.src = videoNotWorking;
     }
+
+    const handleSetShowVideo = () => {
+        dispatch(setShowVideo(videoProps))
+    }
+
     return(
-        <Link to={`/watch/${etag}`}>
+        <Link to={`/watch/${etag}`} onClick={handleSetShowVideo}>
              <div className="videoContainer">
                 <img 
                     src={`${url}`} 
