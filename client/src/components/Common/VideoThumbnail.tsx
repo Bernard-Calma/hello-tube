@@ -1,9 +1,14 @@
+import TimeAgo from "javascript-time-ago";
+import en from 'javascript-time-ago/locale/en'
 
 import ProfileIcon from "./ProfileIcon";
 import "./Styles.css"
 import { Youtube } from "../../features/youtube/types";
 import { Link } from "react-router-dom";
 import { videoNotWorking } from "../../assets/images";
+
+TimeAgo.addDefaultLocale(en)
+const timeAgo = new TimeAgo('en-US')
 
 const VideoThumbnail = (props: any) => {
     // console.log(props)
@@ -20,16 +25,8 @@ const VideoThumbnail = (props: any) => {
     } = snippet
 
     const {url} = thumbnails.high
-    // console.log(videoProps) 
-    // const {
-    //     title,
-    //     channelId,
-    //     publishTime,
-    //     thumbnails
-    // } = snippet;
-    // const {default: url} = thumbnails;
+    console.log(videoProps) 
 
-    
     const handleImageError = (e: any) => {
        e.target.src = videoNotWorking;
     }
@@ -49,7 +46,7 @@ const VideoThumbnail = (props: any) => {
                         <h2 className="videoTitle">{title}</h2>
                          <p className="videoUploadedBy">{channelTitle}</p>
                          {/* <p className="videoViews">{views} views</p> */}
-                         <p className="videoUploaded">• {publishTime}</p>
+                         <p className="videoUploaded">• {timeAgo.format(new Date(publishTime))}</p>
                      </div>
                  </div>
              </div>

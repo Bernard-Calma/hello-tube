@@ -20,12 +20,12 @@ export const getVideo = createAsyncThunk<Array<Youtube>>("youtube/getvideos", as
     try {
         const res = await axios({
             method: "GET",
-            url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmoen-O_vRoOlDgf4uHMBTipldhNTgSTg&q=react&part=snippet&maxResults=5`,
+            url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmoen-O_vRoOlDgf4uHMBTipldhNTgSTg&q=react&part=snippet&maxResults=20`,
         })
         // console.log(res.data.items[0])
         return res.data.items
     } catch (err) {
-        // console.log("Add Account Error: ", err)
+        console.log("Add Account Error: ", err)
         return rejectWithValue("Error getting bills")
     }
 })
