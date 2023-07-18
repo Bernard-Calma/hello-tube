@@ -7,8 +7,8 @@ const Recommendation = () => {
     } = useAppSelector(store => store.youtube)
     return (
         <div className="recommendationContainer">
-            { videos.map(video => 
-                    <VideoThumbnail 
+            { videos.map((video, index) => 
+                    index > videos.length - 9 && <VideoThumbnail 
                         key = {video.etag}
                         videoData = {video} 
                     />
