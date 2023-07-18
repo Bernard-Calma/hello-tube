@@ -4,6 +4,7 @@ nav {
   padding: 10px 20px;
   overflow-y: scroll;
   position: fixed;
+  margin-top: 60px;
 }
 
 nav::-webkit-scrollbar {

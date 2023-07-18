@@ -9,7 +9,7 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
 .videosContainer {
   flex: 1;
   flex-direction: column;
-  margin: 0 10px 0 300px;
+  margin: 60px 10px 0 300px;
 }
 
 /* End of Videos Container */
