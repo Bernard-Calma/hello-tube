@@ -13,6 +13,7 @@ const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   useEffect(() => {
     dispatch(getVideo())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   return(
     <div className='App'>

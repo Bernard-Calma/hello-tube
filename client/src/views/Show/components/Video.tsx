@@ -1,10 +1,8 @@
-import {useParams} from "react-router-dom"
 import { ProfileIcon } from "../../../components/Common";
 import { useAppSelector } from "../../../hooks";
 const videoNotWorking = require("../../../assets/images/VideoNotWorking.png")
 
 const Video:React.FC = () => {
-    const {videoId}: any = useParams();
     const {
         showVideo
     } = useAppSelector(store => store.youtube)
