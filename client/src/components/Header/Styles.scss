@@ -40,19 +40,36 @@ header, .websiteLogo, .searchBarContainer, .searchDiv, .profileContainer {
     height: 36px;
     font-size: 18px;
     overflow: hidden;
+    color: black;
 
-    p {
-        color: $borderLinesColor;
+    input {
         margin: 5px 10px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+
+    input:focus {
+        color: black;
+    }    
+
+
+    .searchDiv {
+        border: none;
+        background: none;
+        display: flex;
+        background-color: $borderLinesColor;
+        height: 100%;
+        border-left: 1px $borderLinesColor solid;
+    }
+
+    .searchDiv:hover {
+        cursor: pointer;
+        background-color: gray;
     }
 }
 
-.searchDiv{
-    display: flex;
-    background-color: $borderLinesColor;
-    height: 100%;
-    border-left: 1px $borderLinesColor solid;
-}
+
 /* End of search bar */
 
 /* Profile */

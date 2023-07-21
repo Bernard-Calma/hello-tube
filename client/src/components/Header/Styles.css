@@ -41,17 +41,28 @@ header, .websiteLogo, .searchBarContainer, .searchDiv, .profileContainer {
   height: 36px;
   font-size: 18px;
   overflow: hidden;
+  color: black;
 }
-.searchBarContainer p {
-  color: rgb(195, 195, 195);
+.searchBarContainer input {
   margin: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
 }
-
-.searchDiv {
+.searchBarContainer input:focus {
+  color: black;
+}
+.searchBarContainer .searchDiv {
+  border: none;
+  background: none;
   display: flex;
   background-color: rgb(195, 195, 195);
   height: 100%;
   border-left: 1px rgb(195, 195, 195) solid;
+}
+.searchBarContainer .searchDiv:hover {
+  cursor: pointer;
+  background-color: gray;
 }
 
 /* End of search bar */
