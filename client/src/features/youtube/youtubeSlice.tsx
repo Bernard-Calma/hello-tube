@@ -11,7 +11,6 @@ export interface youtubeState {
     status: RequestState
 }
 
-
 const initialState: youtubeState = {
     videos: [],
     showVideo: undefined,
@@ -30,6 +29,17 @@ export const getVideo = createAsyncThunk<Array<Youtube>>("youtube/getvideos", as
         console.log("Add Account Error: ", err)
         return rejectWithValue("Error getting bills")
     }
+})
+
+export const searchVideos = createAsyncThunk("youtube/searchVideos", async (searchInput: string, thunkAPI) => {
+    console.log("Search Input", searchInput)
+        const res = await axios({
+            method: "GET",
+            url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmoen-O_vRoOlDgf4uHMBTipldhNTgSTg&q=${searchInput}&part=snippet&maxResults=50`,
+        })
+        // console.log(res.data.items[0])
+        return res.data.items
+
 })
 
 export const youtubeSlice = createSlice({
@@ -51,6 +61,16 @@ export const youtubeSlice = createSlice({
             state.videos = payload
         })
         .addCase(getVideo.rejected, state=> {
+            state.status = "rejected";
+        })
+        .addCase(searchVideos.pending, state=> {
+            state.status = "pending";
+        })
+        .addCase(searchVideos.fulfilled, (state, {payload}) => {
+            state.status = "fulfilled";
+            state.videos = payload
+        })
+        .addCase(searchVideos.rejected, state=> {
             state.status = "rejected";
         })
     }
