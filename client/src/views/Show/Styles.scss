@@ -2,6 +2,7 @@
 
 .showContainer {
     display: flex;
+    justify-content: center;
     height: auto;
 
     .showVideoContainer {
@@ -11,14 +12,11 @@
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
         margin: 60px 0 20px 5rem;
-        padding: 20px 5rem 0 0;
+        padding: 20px 1rem 0 0;
         flex: 4;
 
         img {
-            width: 80%;
-            max-width: 1200px;
             max-height: 720px;
-            padding: 0 3em 20px 5rem
         }
 
         .videoDetails {
@@ -128,40 +126,45 @@
         }
     }
 
-    .recommendationContainer {
-        margin-top: 60px;
-        flex-direction: column;
-        width: 400px !important;
-        overflow: hidden;
-        flex: 1;
-        a {
-            margin: 5px 0;
-            .videoContainer {
-                display: flex;
-                flex-direction: row;
-                overflow: hidden;
-                height: auto;
-                margin: 0;
-
-                img {
-                    width: 350px;
-                    height: 120px;
-                    margin-right: 10px;
-                }
-
-                .videoDetails {
-                    width: auto;
-                    div {
-                        display: none;
+    .showRecommendationDiv {
+        padding-top: 20px;
+        .recommendationContainer {
+            margin-top: 60px;
+            flex-direction: column;
+            width: 350px !important;
+            overflow: hidden;
+            flex: 1;
+            border: none;
+            
+            a {
+                margin: 5px 0;
+                .videoContainer {
+                    display: flex;
+                    flex-direction: row;
+                    overflow: hidden;
+                    height: auto;
+                    margin: 0;
+    
+                    img {
+                        width: 160px;
+                        height: 120px;
+                        margin-right: 10px;
                     }
-
-                    .videoMeta {
-                        display: block;
-                        font-size: 12px;
-
-                        .videoTitle {
-                            font-size: 14px;
-                            margin-bottom: 10px;
+    
+                    .videoDetails {
+                        width: auto;
+                        div {
+                            display: none;
+                        }
+    
+                        .videoMeta {
+                            display: block;
+                            font-size: 12px;
+    
+                            .videoTitle {
+                                font-size: 14px;
+                                margin-bottom: 10px;
+                            }
                         }
                     }
                 }

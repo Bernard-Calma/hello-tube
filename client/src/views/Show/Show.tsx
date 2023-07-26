@@ -7,7 +7,9 @@ const Show: React.FC = () => {
     return(
         <div className="showContainer">
             <Video />
-            <Recommendation />
+            <div className="showRecommendationDiv">
+                <Recommendation />
+            </div>
         </div>
     )
 }
