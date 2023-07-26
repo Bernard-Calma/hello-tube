@@ -13,6 +13,7 @@ import './index.css';
 import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
+import SearchResults from './views/SearchResults/SearchResults';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "watch/:videoId",
         element: <Show /> 
+      },
+      {
+        path: "results/",
+        element: <SearchResults />
       }
     ]
   }

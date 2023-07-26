@@ -5,6 +5,7 @@
     height: auto;
 
     .showVideoContainer {
+        max-width: 1200px;
         display: flex;
         flex-direction: column;
         font-weight: bold;
@@ -15,7 +16,8 @@
 
         img {
             width: 80%;
-            height: 80vh;
+            max-width: 1200px;
+            max-height: 720px;
             padding: 0 3em 20px 5rem
         }
 

@@ -3,7 +3,7 @@ import "./Styles.css"
 const SearchResults = () => {
     return(
         <div className="searchResultContainer">
-            Search Results
+            <p>Search Results</p>
         </div>
     )
 }
