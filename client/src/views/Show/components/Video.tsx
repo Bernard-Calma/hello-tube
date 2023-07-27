@@ -1,6 +1,12 @@
 import { ProfileIcon } from "../../../components/Common";
 import { useAppSelector } from "../../../hooks";
+import TimeAgo from "javascript-time-ago";
+import en from 'javascript-time-ago/locale/en'
+
 const videoNotWorking = require("../../../assets/images/VideoNotWorking.png")
+
+TimeAgo.addDefaultLocale(en)
+const timeAgo = new TimeAgo('en-US')
 
 const Video:React.FC = () => {
     const {
@@ -67,7 +73,7 @@ const Video:React.FC = () => {
                     </div>
                     <div className="videoMeta">
                         {/* <p className="videoViews">{views} views</p> */}
-                        <p className="videoUploaded">{publishTime}</p>
+                        <p className="videoUploaded">{timeAgo.format(new Date(publishTime))}</p>
                         <p className="videoDescription">{description}</p>
                     </div>
                     
