@@ -30,13 +30,21 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                padding-top: 10px;
+                margin: 10px 0;
+                font-size: 14px;
+                font-weight: bold;
+                
+
+                .profileIcon {
+                    margin: 0 10px 0 0;
+                }
 
                 .videoUploadedBy {
                     text-align: start;
                     align-self: flex-start;
-                    margin: 0;
-                    width: 20%;
+                    margin: 0 24px 0 0;
+                    width: 50px;
+                    font-size: 16px;
                 }
 
                 .subscribeButton {
