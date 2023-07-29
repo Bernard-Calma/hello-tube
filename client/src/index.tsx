@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <Show /> 
       },
       {
-        path: "results/",
+        path: "results",
         element: <SearchResults />
       }
     ]
