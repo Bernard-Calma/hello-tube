@@ -1,6 +1,7 @@
 .searchResultContainer {
   position: fixed;
-  width: 100%;
-  border: red 1px solid;
   margin-top: 100px;
+}
+.searchResultContainer .videoListContainer {
+  flex-direction: column;
 }/*# sourceMappingURL=Styles.css.map */

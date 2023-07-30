@@ -11,7 +11,6 @@ const SearchBar = () => {
             e.preventDefault();
             // console.log("Search submitted", searchInput)
             dispatch(searchVideos(searchInput))
-
         }
 
         const handleChange = (e: React.FormEvent) => {
