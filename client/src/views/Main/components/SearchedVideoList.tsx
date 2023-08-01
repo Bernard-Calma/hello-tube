@@ -1,6 +1,21 @@
-const SearchedVideoList = () => {
+import {useEffect} from "react";
+import { useAppDispatch } from "../../../hooks";
+import VideoList from "./VideoList";
+import { searchVideos } from "../../../features/youtube/youtubeSlice";
+import { videoSearchProps } from "../../../features/youtube/types";
+
+
+const SearchedVideoList = (props:videoSearchProps) => {
+    const dispatch = useAppDispatch()
+
+    useEffect(() => {
+        dispatch(searchVideos(props.searchQuery))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [props.searchQuery])
     return(
-        <div>Search</div>
+        <div className="searchResultContainer">
+            <VideoList />
+        </div>
     )
 }
 

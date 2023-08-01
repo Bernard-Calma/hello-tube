@@ -12,10 +12,11 @@ const Main: React.FC = () => {
         <main>
             <Navigation />
             <div className='videosContainer'>
-                
                 {
                     searchQuery
-                    ? <SearchedVideoList />
+                    ? <SearchedVideoList 
+                    searchQuery = {searchQuery}
+                    />
                     : <>
                     <Recommendation />
                     <VideoList/>

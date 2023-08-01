@@ -54,3 +54,7 @@ export type Youtube = {
         publishTime: string;
     };
 };
+
+export type videoSearchProps = {
+    searchQuery: string;
+} 
