@@ -1,6 +1,6 @@
 const SearchedVideoList = () => {
     return(
-        <div></div>
+        <div>Search</div>
     )
 }
 

@@ -14,6 +14,7 @@ import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
 import SearchResults from './views/SearchResults/SearchResults';
+import { SearchedVideoList } from './views/Main/components';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Main /> 
+        element: <Main />,
+        children: [
+          {
+            path: "results",
+            element: <SearchedVideoList /> 
+          },
+        ]
       },
       {
         path: "watch/:videoId",

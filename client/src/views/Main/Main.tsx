@@ -1,14 +1,27 @@
+import { useSearchParams } from 'react-router-dom';
 import Navigation from '../../components/Navigation/Navigation';
-import { Recommendation, VideoList } from './components';
+import { Recommendation, SearchedVideoList, VideoList } from './components';
 import './Styles.css'
 
 const Main: React.FC = () => {
+    const [searchParams] = useSearchParams();
+    const searchQuery = searchParams.get("search_query");
+    console.log(searchQuery)
+
     return(
         <main>
             <Navigation />
             <div className='videosContainer'>
-                <Recommendation />
-                <VideoList/>
+                
+                {
+                    searchQuery
+                    ? <SearchedVideoList />
+                    : <>
+                    <Recommendation />
+                    <VideoList/>
+                    </>
+                }
+                
             </div>
         </main>
     )
