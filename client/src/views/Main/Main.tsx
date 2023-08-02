@@ -1,9 +1,10 @@
 import { useSearchParams } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../../hooks';
+import { setSearchQuery } from '../../features/youtube/youtubeSlice';
+
 import Navigation from '../../components/Navigation/Navigation';
 import { Recommendation, SearchedVideoList, VideoList } from './components';
 import './Styles.css'
-import { useAppDispatch, useAppSelector } from '../../hooks';
-import { setSearchQuery } from '../../features/youtube/youtubeSlice';
 
 const Main: React.FC = () => {
     const dispatch = useAppDispatch()

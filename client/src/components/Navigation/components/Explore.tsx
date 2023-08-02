@@ -78,6 +78,7 @@ const solidIcons:
 const Explore = () => {
     return(
         <div className="navExplore">
+            <p className="navTitle">Explore</p>
             {
                 solidIcons.map(icon =>  
                     <Icon 

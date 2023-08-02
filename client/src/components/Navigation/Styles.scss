@@ -7,6 +7,15 @@ nav {
     overflow-y: scroll;
     position: fixed;
     margin-top: 60px;
+
+    div {
+        .navTitle {
+            margin: 0;
+            text-align: start;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+    }
 }
 nav::-webkit-scrollbar {
     color: gray;

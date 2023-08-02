@@ -35,6 +35,7 @@ const Subscription = () => {
     ]
     return(
         <div className="navSubs">
+            <p className="navTitle">Subscriptions</p>
             {
                 solidIcons.map(icon =>  
                     <Icon 

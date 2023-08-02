@@ -6,6 +6,12 @@ nav {
   position: fixed;
   margin-top: 60px;
 }
+nav div .navTitle {
+  margin: 0;
+  text-align: start;
+  padding-left: 20px;
+  font-size: 18px;
+}
 
 nav::-webkit-scrollbar {
   color: gray;
