@@ -8,12 +8,14 @@ type RequestState = "pending" | "fulfilled" | "rejected"
 export interface youtubeState {
     videos: Array<Youtube>,
     showVideo?: Youtube | undefined,
+    searchQuery?: string | null
     status: RequestState
 }
 
 const initialState: youtubeState = {
     videos: [],
     showVideo: undefined,
+    searchQuery: null,
     status: "pending"
 }
 
@@ -49,6 +51,9 @@ export const youtubeSlice = createSlice({
         setShowVideo: (state, {payload}) => {
             console.log(payload)
             state.showVideo = payload
+        },
+        setSearchQuery: (state, {payload}) => {
+            state.searchQuery = payload
         }
     },
     extraReducers: builder => {
@@ -77,7 +82,8 @@ export const youtubeSlice = createSlice({
 })
 
 export const {
-    setShowVideo
+    setShowVideo,
+    setSearchQuery
 } = youtubeSlice.actions
 
 export default youtubeSlice.reducer;
