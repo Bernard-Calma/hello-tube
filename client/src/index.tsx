@@ -13,6 +13,7 @@ import './index.css';
 import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
+import { Subscriptions } from './views/Main/components';
 
 const router = createBrowserRouter([
   {
@@ -24,9 +25,9 @@ const router = createBrowserRouter([
         element: <Main />,
         children: [
           {
-            path: "results",
-            element: <Main/>
-          },
+            path: "feed/subscriptions",
+            element: <Subscriptions/>
+          }
         ]
       },
       {

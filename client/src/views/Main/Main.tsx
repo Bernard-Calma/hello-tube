@@ -1,4 +1,4 @@
-import { useSearchParams } from 'react-router-dom';
+import { Outlet, useSearchParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { setSearchQuery } from '../../features/youtube/youtubeSlice';
 
@@ -17,7 +17,8 @@ const Main: React.FC = () => {
         <main>
             <Navigation />
             <div className='videosContainer'>
-                {
+                <Outlet />
+                {/* {
                     searchQuery
                     ? <SearchedVideoList 
                     searchQuery = {searchQuery}
@@ -26,7 +27,7 @@ const Main: React.FC = () => {
                     <Recommendation />
                     <VideoList/>
                     </>
-                }
+                } */}
                 
             </div>
         </main>

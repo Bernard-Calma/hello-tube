@@ -1,13 +1,15 @@
 import {useEffect} from "react"
 import {useDispatch} from "react-redux"
 import { 
-  Outlet,
+  Outlet, Route, Routes,
 } from 'react-router-dom';
 
 import './App.css';
 import Header from './components/Header/Header';
 import { getVideo } from "./features/youtube/youtubeSlice";
 import { AppDispatch } from "./store";
+import Main from "./views/Main/Main";
+import { Subscriptions } from "./views/Main/components";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -18,7 +20,12 @@ const App: React.FC = () => {
   return(
     <div className='App'>
       <Header />
-      <Outlet />
+      {/* <Outlet /> */}
+      <Routes>
+        <Route path="/" element={<Main />}>
+            <Route path="feed/Subscriptions" element={<Subscriptions />}/>
+        </Route>
+      </Routes>
     </div>
   )
 }

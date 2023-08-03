@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface IconProps {
     containerClass: string;
     icon: string;
@@ -6,9 +8,10 @@ interface IconProps {
 
 const Icon = ({containerClass, icon, text}: IconProps) => {
     return(
-        <div className={containerClass}>
+        <Link className={containerClass} 
+        to={text=== "Home" ? "/" : `feed/${text}`}>
             <i className={`fa-solid fa-${icon}`}/><span>{text}</span>
-        </div>
+        </Link>
     )
 }
 
