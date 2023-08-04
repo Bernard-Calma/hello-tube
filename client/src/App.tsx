@@ -9,7 +9,7 @@ import Header from './components/Header/Header';
 import { getVideo } from "./features/youtube/youtubeSlice";
 import { AppDispatch } from "./store";
 import Main from "./views/Main/Main";
-import { Subscriptions } from "./views/Main/components";
+import { Library, Recommendation, Subscriptions, VideoList } from "./views/Main/components";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -23,7 +23,12 @@ const App: React.FC = () => {
       {/* <Outlet /> */}
       <Routes>
         <Route path="/" element={<Main />}>
-            <Route path="feed/Subscriptions" element={<Subscriptions />}/>
+            <Route path="/" element={<>
+              <Recommendation />
+              <VideoList/>
+            </>}/>
+            <Route path="feed/Subscription" element={<Subscriptions />}/>
+            <Route path="feed/Library" element={<Library />}/>
         </Route>
       </Routes>
     </div>

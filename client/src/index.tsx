@@ -13,7 +13,7 @@ import './index.css';
 import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
-import { Subscriptions } from './views/Main/components';
+import path from 'path';
 
 const router = createBrowserRouter([
   {
@@ -25,8 +25,16 @@ const router = createBrowserRouter([
         element: <Main />,
         children: [
           {
-            path: "feed/subscriptions",
-            element: <Subscriptions/>
+            path: "Liked Videos"
+          },
+          {
+            path: "feed",
+            children: [
+              {path: "subscription"},
+              {path: "library"},
+              {path: "history"},
+              {path: "storefront"}
+            ]
           }
         ]
       },
