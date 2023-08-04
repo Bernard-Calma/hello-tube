@@ -8,9 +8,24 @@ interface IconProps {
 }
 
 const Icon = ({containerClass, icon, text, category}: IconProps) => {
+    console.log(category)
     return(
         <Link className={containerClass} 
-        to={text=== "Home" ? "/" : `${category}/${text === "Liked Videos" ? "playlist" : text}`}>
+        to={text=== "Home" 
+            ? "/" 
+            : `${category ? category : ""}/${
+            text === "Liked Videos"
+                ? "playlist" 
+            :text === "Favourites"
+                ? "playlist" 
+            :text === "Movies & TV" 
+                ? "storefront"
+            :text === "Fashion & Beauty" 
+                ? "fashion"
+            :text === "Settings" 
+                ? "account"
+                : text}`
+        }>
             <i className={`fa-solid fa-${icon}`}/><span>{text}</span>
         </Link>
     )

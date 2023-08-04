@@ -13,7 +13,6 @@ import './index.css';
 import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
-import path from 'path';
 
 const router = createBrowserRouter([
   {
@@ -25,18 +24,54 @@ const router = createBrowserRouter([
         element: <Main />,
         children: [
           {
-            path: "Liked Videos"
-          },
-          {
+            path: "playlist"
+          },{
+            path: "react"
+          },{
+            path: "javascript"
+          },{
+            path: "python"
+          },{
+            path: "sass"
+          },{
+            path: "gaming"
+          },{
+            path: "podcast"
+          },{
             path: "feed",
             children: [
               {path: "subscription"},
               {path: "library"},
               {path: "history"},
-              {path: "storefront"}
+              {path: "trending"},
+              {path: "storefront"},
+            ]
+          },{
+            path: "channel",
+            children: [
+              {path: "shopping"},
+              {path: "music"},
+              {path: "live"},
+              {path: "news"},
+              {path: "sports"},
+              {path: "learning"},
+              {path: "sports"},
+              {path: "fashion"}
             ]
           }
         ]
+      },
+      {
+        path: "account",
+      },
+      {
+        path: "reporthistory"
+      },
+      {
+        path: "about"
+      },
+      {
+        path: "contactme"
       },
       {
         path: "watch/:videoId",

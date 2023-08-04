@@ -26,17 +26,11 @@ const Videos = () => {
         {
             id: 2,
             containerClass: "navIcons",
-            icon: "file-video",
-            text: "Your Videos"
-        },
-        {
-            id: 3,
-            containerClass: "navIcons",
             icon: "heart",
             text: "Liked Videos"
         },
         {
-            id: 4,
+            id: 3,
             containerClass: "navIcons",
             icon: "star",
             text: "Favourites"

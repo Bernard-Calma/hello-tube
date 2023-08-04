@@ -7,7 +7,8 @@ const Home = () => {
         id: number,
         containerClass: string,
         icon: string,
-        text: string
+        text: string,
+        category?: string
     }[] = [       
         {
             id: 0,
@@ -19,7 +20,8 @@ const Home = () => {
             id: 1,
             containerClass: "navIcons",
             icon: "photo-film",
-            text: "Subscription"
+            text: "Subscription",
+            category: "feed"
         },
     ]
     return(
@@ -31,6 +33,7 @@ const Home = () => {
                         containerClass={icon.containerClass}
                         icon = {icon.icon}
                         text = {icon.text}
+                        category={icon.category}
                     />
                 )
             }
