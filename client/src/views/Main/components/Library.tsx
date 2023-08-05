@@ -1,6 +1,6 @@
 const Library = () => {
     return(<div>
-        <h1>Library</h1>
+        <h1 className="title">Library</h1>
     </div>)
 }
 

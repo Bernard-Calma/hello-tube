@@ -1,6 +1,11 @@
+import VideoList from "./VideoList";
+
 const Subscriptions = () => {
-    return(<div>
-        <h1>Subscriptions</h1>
+    return(<div className="subscription">
+        <div className="header">
+            <h1 className="title">Latest</h1>
+        </div>
+        <VideoList/>
     </div>)
 }
 
