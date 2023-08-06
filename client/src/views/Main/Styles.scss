@@ -36,18 +36,149 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
     }
 
     .subscription {
-        .header {
-            padding: 5px 0 0;
-            margin: 20px 20px 0;
-            .title {
-                text-align: start;
-                margin: 0;
-                font-size: 17px;
-                font-weight: 500;
+        @include mainSubHeader();
+    }
+
+    .history {
+       @include mainSubHeader();
+       display: flex;
+
+       div{
+        display: flex;
+        flex-direction: column;
+       }
+       .header{
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: start;
+           }
+       }
+
+       .videoListContainer {
+        flex: 2;
+        flex-direction: column;
+        
+        a {
+            width: 100%;
+            .videoContainer {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                height: 180px;
+                flex-direction: row;
+                margin: 0 10px;
+
+                img {
+                    height: 150px;
+                    width: 250px;
+                }
+                
+                .videoDetails {
+                    flex: 1;
+                    .profileIcon {
+                        display: none;
+                    }
+                    .videoMeta {
+                        flex: 1;
+                        padding-left: 20px;
+
+                        .videoTitle {
+                            font-size: 20px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                
             }
         }
+       }
 
+       .historySettings {
+            @include normalFont();
+            text-align: start;
+            font-size: 15px;
+            width: 400px;
+            margin-left: 50px;
+            padding-top: 50px;
+
+            h2 {
+                font-weight: normal;
+                font-size: 18px;
+                padding: 30px 10px 15px;
+                margin: 0;
+            }
+
+            p {
+                margin-left: 10px;
+            }
+
+            h2, .historyType > div {
+                border-bottom: solid rgb(204, 204, 204) 1px;
+            }
+
+            div {
+                margin: 5px 0;
+            }
+
+            .searchDiv {
+                width: 250px;
+                display: block;
+                padding-bottom: 10px;
+                border-bottom: solid 1px black;
+                p {
+                    font-size: 14px;
+                    color: gray;
+                    display: inline;
+                    margin: 0;
+                }
+            }
+            
+            .historyType {
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 15px 10px;
+                    border-bottom: solid rgb(204, 204, 204) 1px;
+                    p {
+                        margin: 0
+                    };
+                }
+            }
+
+            .manageHistory {
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 10px 0;
+                    i {
+                        width: 40px;
+                        font-size: 18px;
+                        margin: 0;
+                        text-align: center;
+                    }
+                    p {
+                        color: black;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .historyFooter {
+                p {
+                    padding-left: 20px;
+                    color: gray;
+                    font-weight: bolder;
+                }
+            }
+        }
     }
+
+
 }
 /* End of Videos Container */
 

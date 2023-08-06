@@ -41,6 +41,130 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
   font-size: 17px;
   font-weight: 500;
 }
+.videosContainer .history {
+  display: flex;
+}
+.videosContainer .history .header {
+  padding: 5px 0 0;
+  margin: 20px 20px 0;
+}
+.videosContainer .history .header .title {
+  text-align: start;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+.videosContainer .history div {
+  display: flex;
+  flex-direction: column;
+}
+.videosContainer .history .header h2 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: start;
+}
+.videosContainer .history .videoListContainer {
+  flex: 2;
+  flex-direction: column;
+}
+.videosContainer .history .videoListContainer a {
+  width: 100%;
+}
+.videosContainer .history .videoListContainer a .videoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 180px;
+  flex-direction: row;
+  margin: 0 10px;
+}
+.videosContainer .history .videoListContainer a .videoContainer img {
+  height: 150px;
+  width: 250px;
+}
+.videosContainer .history .videoListContainer a .videoContainer .videoDetails {
+  flex: 1;
+}
+.videosContainer .history .videoListContainer a .videoContainer .videoDetails .profileIcon {
+  display: none;
+}
+.videosContainer .history .videoListContainer a .videoContainer .videoDetails .videoMeta {
+  flex: 1;
+  padding-left: 20px;
+}
+.videosContainer .history .videoListContainer a .videoContainer .videoDetails .videoMeta .videoTitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+.videosContainer .history .historySettings {
+  font-family: sans-serif;
+  font-weight: normal;
+  text-align: start;
+  font-size: 15px;
+  width: 400px;
+  margin-left: 50px;
+  padding-top: 50px;
+}
+.videosContainer .history .historySettings h2 {
+  font-weight: normal;
+  font-size: 18px;
+  padding: 30px 10px 15px;
+  margin: 0;
+}
+.videosContainer .history .historySettings p {
+  margin-left: 10px;
+}
+.videosContainer .history .historySettings h2, .videosContainer .history .historySettings .historyType > div {
+  border-bottom: solid rgb(204, 204, 204) 1px;
+}
+.videosContainer .history .historySettings div {
+  margin: 5px 0;
+}
+.videosContainer .history .historySettings .searchDiv {
+  width: 250px;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: solid 1px black;
+}
+.videosContainer .history .historySettings .searchDiv p {
+  font-size: 14px;
+  color: gray;
+  display: inline;
+  margin: 0;
+}
+.videosContainer .history .historySettings .historyType div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-bottom: solid rgb(204, 204, 204) 1px;
+}
+.videosContainer .history .historySettings .historyType div p {
+  margin: 0;
+}
+.videosContainer .history .historySettings .manageHistory div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+.videosContainer .history .historySettings .manageHistory div i {
+  width: 40px;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+.videosContainer .history .historySettings .manageHistory div p {
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+.videosContainer .history .historySettings .historyFooter p {
+  padding-left: 20px;
+  color: gray;
+  font-weight: bolder;
+}
 
 /* End of Videos Container */
 /* Recommendation */

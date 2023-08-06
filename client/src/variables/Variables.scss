@@ -1,5 +1,6 @@
 // variables
 $borderLinesColor: rgb(195, 195, 195);
+$normalFont: sans-serif;
 
 // mixins
 @mixin container {
@@ -11,4 +12,24 @@ $borderLinesColor: rgb(195, 195, 195);
 @mixin icon {
     font-size: 20px;
     margin: auto 20px auto 10px;
+}
+
+@mixin mainSubHeader {
+    .header {
+        padding: 5px 0 0;
+        margin: 20px 20px 0;
+        .title {
+            text-align: start;
+            margin: 0;
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+}
+
+// FONTS
+
+@mixin normalFont {
+    font-family: $normalFont;
+    font-weight: normal;
 }
