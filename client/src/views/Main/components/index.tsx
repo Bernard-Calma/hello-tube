@@ -4,6 +4,7 @@ import SearchedVideoList from "./SearchedVideoList";
 import Subscriptions from "./Subscriptions";
 import Library from "./Library";
 import History from "./History";
+import LikedVideos from "./LikedVideos";
 
 export {
     Recommendation,
@@ -11,5 +12,6 @@ export {
     SearchedVideoList,
     Subscriptions,
     Library,
-    History
+    History,
+    LikedVideos
 }

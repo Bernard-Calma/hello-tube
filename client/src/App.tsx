@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 import { getVideo } from "./features/youtube/youtubeSlice";
 import { AppDispatch } from "./store";
 import Main from "./views/Main/Main";
-import { History, Library, Recommendation, Subscriptions, VideoList } from "./views/Main/components";
+import { History, Library, LikedVideos, Recommendation, Subscriptions, VideoList } from "./views/Main/components";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -28,6 +28,8 @@ const App: React.FC = () => {
             <Route path="feed/Subscription" element={<Subscriptions />}/>
             <Route path="feed/Library" element={<Library />}/>
             <Route path="feed/History" element={<History />}/>
+
+            <Route path="playlist" element={<LikedVideos />}/>
         </Route>
       </Routes>
     </div>
