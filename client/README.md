@@ -2,3 +2,4 @@
 * React
 * Typescript
 * Sass
+* Redux
