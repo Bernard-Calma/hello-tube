@@ -165,6 +165,10 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
   color: gray;
   font-weight: bolder;
 }
+.videosContainer .library .header {
+  text-align: start;
+  font-size: 12px;
+}
 
 /* End of Videos Container */
 /* Recommendation */

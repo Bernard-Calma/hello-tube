@@ -1,10 +1,9 @@
 import VideoList from "./VideoList";
 
 const Library = () => {
-    return(<div>
+    return(<div className="library">
         <div className="header">
             <h1 className="title">History</h1>
-            <p>Videos Here</p>
         </div>
         <VideoList />
         <div className="header">

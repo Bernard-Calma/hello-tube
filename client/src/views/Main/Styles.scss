@@ -180,6 +180,10 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
 
     .library {
         // Library styles goes here
+        .header {
+            text-align: start;
+            font-size: 12px;
+        }
     }
 }
 /* End of Videos Container */
