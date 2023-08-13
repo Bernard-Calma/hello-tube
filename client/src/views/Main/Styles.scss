@@ -182,7 +182,14 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
         // Library styles goes here
         .header {
             text-align: start;
-            font-size: 12px;
+            font-size: 8px;
+            h1 {
+                display: inline;
+            }
+        }
+
+        .videoListContainer > a:nth-child(n+9) {
+            display: none;
         }
     }
 }

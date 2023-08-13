@@ -167,7 +167,13 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
 }
 .videosContainer .library .header {
   text-align: start;
-  font-size: 12px;
+  font-size: 8px;
+}
+.videosContainer .library .header h1 {
+  display: inline;
+}
+.videosContainer .library .videoListContainer > a:nth-child(n+9) {
+  display: none;
 }
 
 /* End of Videos Container */
