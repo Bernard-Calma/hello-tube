@@ -4,7 +4,7 @@ const History = () => {
     return(
         <>
             <div className="history">
-                <div>
+                <div className="historyContainer">
                     <div className="header">
                         <h1 className="title">Watch History</h1>
                         <h2>Today</h2>

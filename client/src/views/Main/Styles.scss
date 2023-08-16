@@ -41,12 +41,20 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
 
     .history {
        @include mainSubHeader();
+       width: 100%;
        display: flex;
 
        div{
         display: flex;
         flex-direction: column;
        }
+
+       .historyContainer {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+       }
+
        .header{
         h2 {
             font-size: 18px;
