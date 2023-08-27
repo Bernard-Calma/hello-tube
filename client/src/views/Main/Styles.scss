@@ -202,24 +202,124 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
     }
 
     .likedVideos {
-        border: solid red 1px;
+        // border: solid red 1px;
         display: flex;
+        flex-direction: row;
         width: 100%;
         height: 90vh;
-        
+        text-align: start;
         .videoPreview {
-            border: solid blue 1px;
+            // border: solid blue 1px;
             height: 100%;
+            background-color: rgba(82, 82, 82, 0.464);
+            border-radius: 20px;
 
             a {
                 height: 200px;
-                
+                .videoContainer {
+                    margin: 20px auto;
+                    text-align: center;
+                    height: 200px;
+                }
                 .videoDetails {
                     display: none;
                 }
             }
 
+            .previewDetails {
+                h2, p, i {
+                    margin: 5px 0 5px 20px;
+                }
 
+                
+                p {
+                    font-size: 14px;
+                }
+
+                i {
+                    background-color: gray;
+                    padding: 5px 12px;
+                    border-radius: 50px;
+                    color: white;
+                }
+                
+
+                .owner {
+                    font-weight: bolder;
+                }
+
+                .navContainer {
+                    display: flex;
+                    justify-content: space-around;
+
+                    
+                    .previewNav {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: gray;
+                        border-radius: 20px;
+                        padding-right: 10px;
+
+                        font-weight: bolder;
+                        p {
+                            color: white;
+                            margin: 0 20px 0 0
+                        }
+                    }
+
+                    .previewNav:nth-child(1) {
+                        background-color: white;
+                        i, p {
+                            color: black;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .likedVideosList {
+            // border: green solid 1px;
+            flex: 1;
+            padding-left: 20px;
+
+            .videoListContainer {
+                flex-direction: column;
+
+                a {
+                    width: 100%;
+                    .videoContainer {
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        height: 120px;
+                        width: 100%;
+                        img {
+                            height: 100px;
+                            width: 200px;
+                        }
+
+                        .videoDetails {
+                            flex: 1;
+                            margin-left: 20px;
+
+                            .profileIcon {
+                                display: none;
+                            }
+
+                            .videoMeta {
+                                width: 100%;
+                            }
+
+                            .videoUploadedBy {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

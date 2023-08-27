@@ -182,20 +182,100 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
   display: none;
 }
 .videosContainer .likedVideos {
-  border: solid red 1px;
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 90vh;
+  text-align: start;
 }
 .videosContainer .likedVideos .videoPreview {
-  border: solid blue 1px;
   height: 100%;
+  background-color: rgba(82, 82, 82, 0.464);
+  border-radius: 20px;
 }
 .videosContainer .likedVideos .videoPreview a {
   height: 200px;
 }
+.videosContainer .likedVideos .videoPreview a .videoContainer {
+  margin: 20px auto;
+  text-align: center;
+  height: 200px;
+}
 .videosContainer .likedVideos .videoPreview a .videoDetails {
   display: none;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails h2, .videosContainer .likedVideos .videoPreview .previewDetails p, .videosContainer .likedVideos .videoPreview .previewDetails i {
+  margin: 5px 0 5px 20px;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails p {
+  font-size: 14px;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails i {
+  background-color: gray;
+  padding: 5px 12px;
+  border-radius: 50px;
+  color: white;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails .owner {
+  font-weight: bolder;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails .navContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails .navContainer .previewNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  border-radius: 20px;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails .navContainer .previewNav p {
+  color: white;
+  margin: 0 20px 0 0;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails .navContainer .previewNav:nth-child(1) {
+  background-color: white;
+}
+.videosContainer .likedVideos .videoPreview .previewDetails .navContainer .previewNav:nth-child(1) i, .videosContainer .likedVideos .videoPreview .previewDetails .navContainer .previewNav:nth-child(1) p {
+  color: black;
+  background-color: white;
+}
+.videosContainer .likedVideos .likedVideosList {
+  flex: 1;
+  padding-left: 20px;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer {
+  flex-direction: column;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a {
+  width: 100%;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer img {
+  height: 100px;
+  width: 200px;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails {
+  flex: 1;
+  margin-left: 20px;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .profileIcon {
+  display: none;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .videoMeta {
+  width: 100%;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .videoUploadedBy {
+  display: inline;
 }
 
 /* End of Videos Container */
