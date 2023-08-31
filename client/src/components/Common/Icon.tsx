@@ -8,7 +8,7 @@ interface IconProps {
 }
 
 const Icon = ({containerClass, icon, text, category}: IconProps) => {
-    console.log(category)
+    // console.log(category)
     return(
         <Link className={containerClass} 
         to={text=== "Home" 

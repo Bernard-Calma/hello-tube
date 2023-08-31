@@ -49,7 +49,7 @@ export const youtubeSlice = createSlice({
     initialState,
     reducers: {
         setShowVideo: (state, {payload}) => {
-            console.log(payload)
+            // console.log(payload)
             state.showVideo = payload
         },
         setSearchQuery: (state, {payload}) => {

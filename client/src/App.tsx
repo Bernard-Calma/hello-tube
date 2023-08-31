@@ -27,8 +27,7 @@ const App: React.FC = () => {
             </>}/>
             <Route path="feed/Subscription" element={<Subscriptions />}/>
             <Route path="feed/Library" element={<Library />}/>
-            <Route path="feed/History" element={<History />}/>
-
+            <Route path="feed/History" element={<History />}/> 
             <Route path="playlist" element={<LikedVideos />}/>
         </Route>
       </Routes>
