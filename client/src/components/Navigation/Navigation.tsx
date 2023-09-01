@@ -6,8 +6,8 @@ const Navigation = () => {
         <nav>
             <Home />
             <Videos />
-            <Subscription />
-            <Explore />
+            {/* <Subscription /> */}
+            {/* <Explore /> */}
             <Settings />
             <Footer />
         </nav>

@@ -13,5 +13,7 @@ export {
     Subscriptions,
     Library,
     History,
-    LikedVideos
+    LikedVideos,
+    // Explore
+    
 }
