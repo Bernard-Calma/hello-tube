@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import youtubeReducer from "./features/youtube/youtubeSlice"
+import viewReducer from "./features/views/viewSlice"
 
 export const store = configureStore({
   reducer: {
     youtube:  youtubeReducer,
+    view: viewReducer
   },
 })
 

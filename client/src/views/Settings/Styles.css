@@ -1,0 +1,28 @@
+.settingsSection {
+  font-family: sans-serif;
+  font-weight: normal;
+  padding-top: 60px;
+  display: flex;
+}
+.settingsSection .settingsMenu {
+  border: red 1px solid;
+  width: 300px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.settingsSection .settingsMenu h2 {
+  padding-left: 10px;
+}
+.settingsSection .settingsMenu a {
+  list-style-type: none;
+  margin: 10px 0;
+  padding-left: 20px;
+  font-weight: lighter;
+}
+.settingsSection .settingsContainer {
+  border: blue 1px solid;
+  margin-left: 310px;
+  flex: 1;
+}/*# sourceMappingURL=Styles.css.map */

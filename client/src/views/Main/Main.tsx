@@ -5,6 +5,7 @@ import { setSearchQuery } from '../../features/youtube/youtubeSlice';
 import Navigation from '../../components/Navigation/Navigation';
 import { Recommendation, SearchedVideoList, VideoList } from './components';
 import './Styles.css'
+import { SettingsNav } from '../Settings/components';
 
 const Main: React.FC = () => {
     const dispatch = useAppDispatch()
@@ -16,6 +17,7 @@ const Main: React.FC = () => {
     return(
         <main>
             <Navigation />
+            {/* <SettingsNav /> */}
             <div className='videosContainer'>
                 <Outlet />
                 {/* {
