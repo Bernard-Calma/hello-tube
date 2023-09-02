@@ -33,18 +33,18 @@ nav::-webkit-scrollbar-thumb {
 
 /* End of Common */
 /* Home */
-.navIcons {
+.navIcons, a {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
 }
-.navIcons i {
+.navIcons i, a i {
   flex: 1;
   margin-left: 0;
 }
-.navIcons span {
+.navIcons span, a span {
   flex: 2;
   text-align: start;
   font-family: Arial, Helvetica, sans-serif;

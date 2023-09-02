@@ -34,3 +34,11 @@
         
     }
 }
+
+// Account
+.accountSection {
+    @include normalFont;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}

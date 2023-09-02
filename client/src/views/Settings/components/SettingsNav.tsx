@@ -5,7 +5,7 @@ import { changeViewSettings } from "../../../features/views/viewSlice";
 const SettingsNav = () => {
     const dispatch = useAppDispatch()
     return (
-        <div className="settingsMenu">
+        <nav className="settingsMenu">
             <h2>Settings</h2>
             <Link
                 to={"/account"}>Account</Link>
@@ -15,7 +15,7 @@ const SettingsNav = () => {
             <Link to={"/account_sharing"}>Connected apps</Link>
             <Link to={"/account_billing"}>BilLinkng and payments</Link>
             <Link to={"/account_advance"}>Advance settings</Link>
-        </div>
+        </nav>
     )
 }
 

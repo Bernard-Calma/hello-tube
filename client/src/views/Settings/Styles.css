@@ -25,4 +25,12 @@
   border: blue 1px solid;
   margin-left: 310px;
   flex: 1;
+}
+
+.accountSection {
+  font-family: sans-serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }/*# sourceMappingURL=Styles.css.map */

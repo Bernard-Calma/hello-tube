@@ -38,7 +38,7 @@ nav::-webkit-scrollbar-thumb {
 /* End of Common */
 
 /* Home */
-.navIcons {
+.navIcons, a {
     @include container();
     justify-content: space-between;
     margin: 10px 0;
@@ -73,3 +73,5 @@ footer > p {
     text-align: start;
 }
 /* End of Footer */
+
+// Settings
