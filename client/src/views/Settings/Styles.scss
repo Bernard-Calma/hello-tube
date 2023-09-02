@@ -38,7 +38,56 @@
 // Account
 .accountSection {
     @include normalFont;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: start;
+
+    div {
+        margin: 10px 0;
+    }
+
+    p, h3 {
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .bold {
+        font-weight: bolder;
+    }
+
+    .blue {
+        color: rgb(6, 95, 212);
+    }
+
+    .channel {
+        border-top: 0.5px solid gray;
+        border-bottom: 0.5px solid gray;
+    }
+
+    .channel, .account {
+        padding: 20px 0;
+        div {
+            display: flex;
+            justify-content: space-between;
+            .subDiv {
+                margin-left: 30px;
+                flex-direction: column;
+                .user {
+                    text-align: end;
+                    padding-right: 20px;
+                }
+                p {
+                    margin: 3px 0;
+                }
+            }
+
+            .subDivAccount {
+                width: 50%;
+            }
+        }
+    }
 }

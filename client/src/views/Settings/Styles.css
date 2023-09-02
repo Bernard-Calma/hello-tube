@@ -30,7 +30,48 @@
 .accountSection {
   font-family: sans-serif;
   font-weight: normal;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   text-align: start;
+}
+.accountSection div {
+  margin: 10px 0;
+}
+.accountSection p, .accountSection h3 {
+  margin: 10px 0;
+}
+.accountSection p {
+  font-size: 14px;
+}
+.accountSection .bold {
+  font-weight: bolder;
+}
+.accountSection .blue {
+  color: rgb(6, 95, 212);
+}
+.accountSection .channel {
+  border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;
+}
+.accountSection .channel, .accountSection .account {
+  padding: 20px 0;
+}
+.accountSection .channel div, .accountSection .account div {
+  display: flex;
+  justify-content: space-between;
+}
+.accountSection .channel div .subDiv, .accountSection .account div .subDiv {
+  margin-left: 30px;
+  flex-direction: column;
+}
+.accountSection .channel div .subDiv .user, .accountSection .account div .subDiv .user {
+  text-align: end;
+  padding-right: 20px;
+}
+.accountSection .channel div .subDiv p, .accountSection .account div .subDiv p {
+  margin: 3px 0;
+}
+.accountSection .channel div .subDivAccount, .accountSection .account div .subDivAccount {
+  width: 50%;
 }/*# sourceMappingURL=Styles.css.map */
