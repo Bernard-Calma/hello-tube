@@ -64,4 +64,16 @@ footer > p {
   text-align: start;
 }
 
-/* End of Footer *//*# sourceMappingURL=Styles.css.map */
+/* End of Footer */
+.settingsMenu {
+  text-align: start;
+}
+.settingsMenu a {
+  margin: 0;
+  padding: 10px;
+}
+.settingsMenu .selected {
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+  font-weight: bold;
+}/*# sourceMappingURL=Styles.css.map */

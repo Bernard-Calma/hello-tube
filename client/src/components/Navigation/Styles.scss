@@ -75,3 +75,16 @@ footer > p {
 /* End of Footer */
 
 // Settings
+
+.settingsMenu {
+    text-align: start;
+    a {
+        margin: 0;
+        padding: 10px;
+    }
+    .selected {
+        background-color: rgb(197, 197, 197);
+        border-radius: 10px;
+        font-weight: bold;
+    }
+}

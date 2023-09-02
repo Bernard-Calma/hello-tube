@@ -1,13 +1,16 @@
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useAppDispatch } from "../../../hooks";
-import { changeViewSettings } from "../../../features/views/viewSlice";
 
 const SettingsNav = () => {
     const dispatch = useAppDispatch()
+    const location = useLocation()
+    // console.log(location.pathname)
     return (
         <nav className="settingsMenu">
             <h2>Settings</h2>
             <Link
+                className={`${location.pathname === "/account" ? "selected" : ''}`}
                 to={"/account"}>Account</Link>
             <Link to={"/account_notifications"}>Notification</Link>
             <Link to={"/account_playback"}>Playback and performance</Link>
