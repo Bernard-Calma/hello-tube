@@ -92,6 +92,7 @@ const Explore = () => {
             {
                 solidIcons.map(icon =>  
                     <Icon 
+                        view = {"main"}
                         key = {icon.id}
                         containerClass={icon.containerClass}
                         icon = {icon.icon}

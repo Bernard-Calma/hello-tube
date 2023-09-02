@@ -11,12 +11,17 @@ const Main: React.FC = () => {
     const dispatch = useAppDispatch()
     const [searchParams] = useSearchParams();
     let {searchQuery} = useAppSelector(store => store.youtube)
+    let {view} = useAppSelector(store => store.view)
     dispatch(setSearchQuery(searchParams.get("search_query")))
     // console.log(searchQuery)
 
     return(
         <main>
-            <Navigation />
+            {
+                view === "Main"
+                ? <Navigation />
+                : <SettingsNav />
+            }
             {/* <SettingsNav /> */}
             <div className='videosContainer'>
                 <Outlet />

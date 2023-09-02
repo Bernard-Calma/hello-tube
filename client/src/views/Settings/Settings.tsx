@@ -4,7 +4,7 @@ import { SettingsNav } from "./components";
 
 const Settings = () => <div className="settingsSection">
     <SettingsNav />
-    <Outlet />
+    {/* <Outlet /> */}
     <div className="settingsContainer">
         State
     </div>

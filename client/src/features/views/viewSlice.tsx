@@ -12,15 +12,18 @@ export const viewSlice = createSlice({
     name: "view",
     initialState,
     reducers: {
-        changeView: (state, {payload}) => {
-            console.log(payload);
-            state.view = payload;
+        changeViewMain: (state) => {
+            state.view = "Main";
+        },
+        changeViewSettings: (state) => {
+            state.view = "Settings";
         }
     }
 })
 
 export const {
-
+    changeViewMain,
+    changeViewSettings
 } = viewSlice.actions
 
 export default viewSlice.reducer;

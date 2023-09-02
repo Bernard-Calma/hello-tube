@@ -39,6 +39,7 @@ const Settings = () => {
             {
                 solidIcons.map(icon =>  
                     <Icon 
+                        view = {"settings"}
                         key = {icon.id}
                         containerClass={icon.containerClass}
                         icon = {icon.icon}
