@@ -89,4 +89,16 @@
 .accountSection .emailNotification .emailNotifToggle .subDiv .toggleContainer, .accountNotifications .emailNotification .emailNotifToggle .subDiv .toggleContainer {
   margin: 0;
   padding: 0;
+}
+.accountSection .language .subDiv div, .accountNotifications .language .subDiv div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(226, 226, 226);
+  padding: 10px 200px 10px 20px;
+}
+.accountSection .language .subDiv div p, .accountNotifications .language .subDiv div p {
+  font-weight: lighter;
+}
+.accountSection .language .subDiv div .emailLang, .accountNotifications .language .subDiv div .emailLang {
+  font-size: 12px;
 }/*# sourceMappingURL=Styles.css.map */

@@ -114,6 +114,26 @@
                     padding: 0;
                 }
             }
+        }
     }
+
+    .language {
+       .subDiv {
+            div {
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(226, 226, 226);
+                padding: 10px 200px 10px 20px;
+                
+                p {
+                    font-weight: lighter;
+                }
+
+                .emailLang {
+                    font-size: 12px;
+                }
+            }
+        
+       }
     }
 }

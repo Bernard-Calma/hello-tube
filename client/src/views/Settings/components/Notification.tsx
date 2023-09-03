@@ -26,20 +26,42 @@ const Notification = () => {
                 <div>
                     <p className="bold title">Your preferences</p>
                     <div className="subDiv">
-                        <p className="bold">Subscriptions</p>
-                        <p>Notify me about activity from the <span className="blue"> channels that I'm subscribed to</span></p>
-                        <p className="bold">Recommended Videos</p>
-                        <p>Notify me of videos that I might like based on what I watch</p>
-                        <p className="bold">Activity on my channel</p>
-                        <p>Notify me about comments and other activity on my channel and videos</p>
-                        <p className="bold">Replies to my comments</p>
-                        <p>Notify me about replies to my commnets</p>
-                        <p className="bold">Mentions</p>
-                        <p>Notify me when others mention my channel</p>
-                        <p className="bold">Shared content</p>
-                        <p>Notify me when others share my content on their channels</p>
-                        <p className="bold">Promotional content and offerings</p>
-                        <p>Notify me of promotional content and offerings, like member-only perks</p>
+                        <ToggleButton 
+                            toggled = {true}
+                            label="Subscriptions"
+                            description="Notify me about activity from the channels that I'm subscribed to"
+                            
+                        />
+                        <ToggleButton 
+                            toggled = {false}
+                            label="Recommended Videos"
+                            description="Notify me of videos that I might like based on what I watch"
+                        />
+                        <ToggleButton 
+                            toggled = {true}
+                            label="Activity on my channel"
+                            description="Notify me about comments and other activity on my channel and videos"
+                        />
+                        <ToggleButton 
+                            toggled = {false}
+                            label="Replies to my comments"
+                            description="Notify me about replies to my commnets"
+                        />
+                        <ToggleButton 
+                            toggled = {true}
+                            label="Mentions"
+                            description="Notify me when others mention my channel"
+                        />
+                        <ToggleButton 
+                            toggled = {false}
+                            label="Shared content"
+                            description="Notify me when others share my content on their channels"
+                        />
+                        <ToggleButton 
+                            toggled = {true}
+                            label="Promotional content and offerings"
+                            description="Notify me of promotional content and offerings, like member-only perks"
+                        />
                     </div>
                 </div>
             </div>
@@ -92,11 +114,13 @@ const Notification = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="language">
                     <p className="bold title">Lanugage</p>
                     <div className="subDiv">
-                        <p>Email Language</p>
-                        <p>English (UK)</p>
+                        <div>
+                            <p className="emailLang">Email language</p>
+                            <p>English (UK)</p>
+                        </div>
                         <p>This settings applies to emails only</p>
                     </div>
                 </div>
