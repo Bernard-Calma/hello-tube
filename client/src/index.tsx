@@ -76,6 +76,9 @@ const router = createBrowserRouter([
         path: "account",
       },
       {
+        path: "account_notifications"
+      },
+      {
         path: "reporthistory"
       },
       {

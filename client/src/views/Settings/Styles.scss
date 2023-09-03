@@ -36,7 +36,7 @@
 }
 
 // Account
-.accountSection {
+.accountSection, .accountNotifications {
     @include normalFont;
     padding-top: 50px;
     display: flex;
@@ -68,11 +68,19 @@
         border-bottom: 0.5px solid gray;
     }
 
-    .channel, .account {
+    .channel, .account, .general, .emailNotification {
         padding: 20px 0;
         div {
             display: flex;
-            justify-content: space-between;
+
+            input {
+                width: 30px;
+            }
+
+            .title {
+                width: 150px;
+            }
+
             .subDiv {
                 margin-left: 30px;
                 flex-direction: column;
@@ -89,5 +97,23 @@
                 width: 50%;
             }
         }
+    }
+
+    .emailNotification {
+        .emailNotifToggle {
+            justify-content: flex-start !important;
+     
+
+            p.title {
+                min-width: 150px;
+            }
+
+            .subDiv {
+                .toggleContainer {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+    }
     }
 }

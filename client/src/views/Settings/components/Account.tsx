@@ -11,7 +11,7 @@ const Account = () => <div className="accountSection">
         <h3 className="bold">Your HelloTube Channel</h3>
         <p>This is your publick presence on HelloTube. You need a channgel to upload your own videos, comment on videos or create playlists.</p>
         <div>
-            <p className="bold">Your channel</p>
+            <p className="bold title">Your channel</p>
             <div className="subDiv">
             <p className="user">Bernard Calma</p>
                 <p className="blue bold">Channel status and features</p>
@@ -25,7 +25,7 @@ const Account = () => <div className="accountSection">
         <h3>Your Account</h3>
         <p>You sign it to HelloTube with your email</p>
         <div>
-            <p className="bold">Google Account</p>
+            <p className="bold title">Google Account</p>
             <div className="subDiv subDivAccount">
                 <p className="blue bold">View or change your Email Account settings</p>
                 <p>You will be redirected to your Email Account page</p>
@@ -33,7 +33,7 @@ const Account = () => <div className="accountSection">
             
         </div>
         <div>
-            <p className="bold">Membership</p>
+            <p className="bold title">Membership</p>
             <div className="subDiv subDivAccount">
                 <p>No Membership</p>
                 <p className="blue bold">Get HelloTube Premium</p>
