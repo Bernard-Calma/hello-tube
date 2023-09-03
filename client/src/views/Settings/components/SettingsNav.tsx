@@ -17,7 +17,7 @@ const SettingsNav = () => {
                 to={"/account_notifications"}>Notifications</Link>
             <Link 
                 className={`${location.pathname === "/account_playback" ? "selected" : ''}`}
-                to={"/account_notifications"}>Playback and performance</Link>
+                to={"/account_playback"}>Playback and performance</Link>
             <Link to={"/account_privacy"}>Privacy</Link>
             <Link to={"/account_sharing"}>Connected apps</Link>
             <Link to={"/account_billing"}>BilLinkng and payments</Link>

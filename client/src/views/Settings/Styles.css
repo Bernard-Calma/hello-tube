@@ -27,7 +27,7 @@
   flex: 1;
 }
 
-.accountSection, .accountNotifications {
+.accountSection, .accountNotifications, .accountPlayback {
   font-family: sans-serif;
   font-weight: normal;
   padding-top: 50px;
@@ -35,70 +35,109 @@
   flex-direction: column;
   text-align: start;
 }
-.accountSection div, .accountNotifications div {
+.accountSection div, .accountNotifications div, .accountPlayback div {
   margin: 10px 0;
 }
-.accountSection p, .accountSection h3, .accountNotifications p, .accountNotifications h3 {
+.accountSection p, .accountSection h3, .accountNotifications p, .accountNotifications h3, .accountPlayback p, .accountPlayback h3 {
   margin: 10px 0;
 }
-.accountSection p, .accountNotifications p {
+.accountSection p, .accountNotifications p, .accountPlayback p {
   font-size: 14px;
 }
-.accountSection .bold, .accountNotifications .bold {
+.accountSection .bold, .accountNotifications .bold, .accountPlayback .bold {
   font-weight: bolder;
 }
-.accountSection .blue, .accountNotifications .blue {
+.accountSection .light, .accountNotifications .light, .accountPlayback .light {
+  font-weight: lighter;
+}
+.accountSection .blue, .accountNotifications .blue, .accountPlayback .blue {
   color: rgb(6, 95, 212);
 }
-.accountSection .channel, .accountNotifications .channel {
+.accountSection .channel, .accountNotifications .channel, .accountPlayback .channel {
   border-top: 0.5px solid gray;
   border-bottom: 0.5px solid gray;
 }
-.accountSection .channel, .accountSection .account, .accountSection .general, .accountSection .emailNotification, .accountSection .accountPlayback, .accountNotifications .channel, .accountNotifications .account, .accountNotifications .general, .accountNotifications .emailNotification, .accountNotifications .accountPlayback {
+.accountSection .channel, .accountSection .account, .accountSection .general, .accountSection .emailNotification, .accountNotifications .channel, .accountNotifications .account, .accountNotifications .general, .accountNotifications .emailNotification, .accountPlayback .channel, .accountPlayback .account, .accountPlayback .general, .accountPlayback .emailNotification {
   padding: 20px 0;
 }
-.accountSection .channel div, .accountSection .account div, .accountSection .general div, .accountSection .emailNotification div, .accountSection .accountPlayback div, .accountNotifications .channel div, .accountNotifications .account div, .accountNotifications .general div, .accountNotifications .emailNotification div, .accountNotifications .accountPlayback div {
+.accountSection .channel div, .accountSection .account div, .accountSection .general div, .accountSection .emailNotification div, .accountNotifications .channel div, .accountNotifications .account div, .accountNotifications .general div, .accountNotifications .emailNotification div, .accountPlayback .channel div, .accountPlayback .account div, .accountPlayback .general div, .accountPlayback .emailNotification div {
   display: flex;
 }
-.accountSection .channel div input, .accountSection .account div input, .accountSection .general div input, .accountSection .emailNotification div input, .accountSection .accountPlayback div input, .accountNotifications .channel div input, .accountNotifications .account div input, .accountNotifications .general div input, .accountNotifications .emailNotification div input, .accountNotifications .accountPlayback div input {
+.accountSection .channel div input, .accountSection .account div input, .accountSection .general div input, .accountSection .emailNotification div input, .accountNotifications .channel div input, .accountNotifications .account div input, .accountNotifications .general div input, .accountNotifications .emailNotification div input, .accountPlayback .channel div input, .accountPlayback .account div input, .accountPlayback .general div input, .accountPlayback .emailNotification div input {
   width: 30px;
 }
-.accountSection .channel div .title, .accountSection .account div .title, .accountSection .general div .title, .accountSection .emailNotification div .title, .accountSection .accountPlayback div .title, .accountNotifications .channel div .title, .accountNotifications .account div .title, .accountNotifications .general div .title, .accountNotifications .emailNotification div .title, .accountNotifications .accountPlayback div .title {
+.accountSection .channel div .title, .accountSection .account div .title, .accountSection .general div .title, .accountSection .emailNotification div .title, .accountNotifications .channel div .title, .accountNotifications .account div .title, .accountNotifications .general div .title, .accountNotifications .emailNotification div .title, .accountPlayback .channel div .title, .accountPlayback .account div .title, .accountPlayback .general div .title, .accountPlayback .emailNotification div .title {
   width: 150px;
 }
-.accountSection .channel div .subDiv, .accountSection .account div .subDiv, .accountSection .general div .subDiv, .accountSection .emailNotification div .subDiv, .accountSection .accountPlayback div .subDiv, .accountNotifications .channel div .subDiv, .accountNotifications .account div .subDiv, .accountNotifications .general div .subDiv, .accountNotifications .emailNotification div .subDiv, .accountNotifications .accountPlayback div .subDiv {
+.accountSection .channel div .subDiv, .accountSection .account div .subDiv, .accountSection .general div .subDiv, .accountSection .emailNotification div .subDiv, .accountNotifications .channel div .subDiv, .accountNotifications .account div .subDiv, .accountNotifications .general div .subDiv, .accountNotifications .emailNotification div .subDiv, .accountPlayback .channel div .subDiv, .accountPlayback .account div .subDiv, .accountPlayback .general div .subDiv, .accountPlayback .emailNotification div .subDiv {
   margin-left: 30px;
   flex-direction: column;
 }
-.accountSection .channel div .subDiv .user, .accountSection .account div .subDiv .user, .accountSection .general div .subDiv .user, .accountSection .emailNotification div .subDiv .user, .accountSection .accountPlayback div .subDiv .user, .accountNotifications .channel div .subDiv .user, .accountNotifications .account div .subDiv .user, .accountNotifications .general div .subDiv .user, .accountNotifications .emailNotification div .subDiv .user, .accountNotifications .accountPlayback div .subDiv .user {
+.accountSection .channel div .subDiv .user, .accountSection .account div .subDiv .user, .accountSection .general div .subDiv .user, .accountSection .emailNotification div .subDiv .user, .accountNotifications .channel div .subDiv .user, .accountNotifications .account div .subDiv .user, .accountNotifications .general div .subDiv .user, .accountNotifications .emailNotification div .subDiv .user, .accountPlayback .channel div .subDiv .user, .accountPlayback .account div .subDiv .user, .accountPlayback .general div .subDiv .user, .accountPlayback .emailNotification div .subDiv .user {
   text-align: end;
   padding-right: 20px;
 }
-.accountSection .channel div .subDiv p, .accountSection .account div .subDiv p, .accountSection .general div .subDiv p, .accountSection .emailNotification div .subDiv p, .accountSection .accountPlayback div .subDiv p, .accountNotifications .channel div .subDiv p, .accountNotifications .account div .subDiv p, .accountNotifications .general div .subDiv p, .accountNotifications .emailNotification div .subDiv p, .accountNotifications .accountPlayback div .subDiv p {
+.accountSection .channel div .subDiv p, .accountSection .account div .subDiv p, .accountSection .general div .subDiv p, .accountSection .emailNotification div .subDiv p, .accountNotifications .channel div .subDiv p, .accountNotifications .account div .subDiv p, .accountNotifications .general div .subDiv p, .accountNotifications .emailNotification div .subDiv p, .accountPlayback .channel div .subDiv p, .accountPlayback .account div .subDiv p, .accountPlayback .general div .subDiv p, .accountPlayback .emailNotification div .subDiv p {
   margin: 3px 0;
 }
-.accountSection .channel div .subDivAccount, .accountSection .account div .subDivAccount, .accountSection .general div .subDivAccount, .accountSection .emailNotification div .subDivAccount, .accountSection .accountPlayback div .subDivAccount, .accountNotifications .channel div .subDivAccount, .accountNotifications .account div .subDivAccount, .accountNotifications .general div .subDivAccount, .accountNotifications .emailNotification div .subDivAccount, .accountNotifications .accountPlayback div .subDivAccount {
+.accountSection .channel div .subDivAccount, .accountSection .account div .subDivAccount, .accountSection .general div .subDivAccount, .accountSection .emailNotification div .subDivAccount, .accountNotifications .channel div .subDivAccount, .accountNotifications .account div .subDivAccount, .accountNotifications .general div .subDivAccount, .accountNotifications .emailNotification div .subDivAccount, .accountPlayback .channel div .subDivAccount, .accountPlayback .account div .subDivAccount, .accountPlayback .general div .subDivAccount, .accountPlayback .emailNotification div .subDivAccount {
   width: 50%;
 }
-.accountSection .emailNotification .emailNotifToggle, .accountNotifications .emailNotification .emailNotifToggle {
+.accountSection .emailNotification .emailNotifToggle, .accountNotifications .emailNotification .emailNotifToggle, .accountPlayback .emailNotification .emailNotifToggle {
   justify-content: flex-start !important;
 }
-.accountSection .emailNotification .emailNotifToggle p.title, .accountNotifications .emailNotification .emailNotifToggle p.title {
+.accountSection .emailNotification .emailNotifToggle p.title, .accountNotifications .emailNotification .emailNotifToggle p.title, .accountPlayback .emailNotification .emailNotifToggle p.title {
   min-width: 150px;
 }
-.accountSection .emailNotification .emailNotifToggle .subDiv .toggleContainer, .accountNotifications .emailNotification .emailNotifToggle .subDiv .toggleContainer {
+.accountSection .emailNotification .emailNotifToggle .subDiv .toggleContainer, .accountNotifications .emailNotification .emailNotifToggle .subDiv .toggleContainer, .accountPlayback .emailNotification .emailNotifToggle .subDiv .toggleContainer {
   margin: 0;
   padding: 0;
 }
-.accountSection .language .subDiv div, .accountNotifications .language .subDiv div {
+.accountSection .language .subDiv div, .accountNotifications .language .subDiv div, .accountPlayback .language .subDiv div {
   display: flex;
   flex-direction: column;
   background-color: rgb(226, 226, 226);
   padding: 10px 200px 10px 20px;
 }
-.accountSection .language .subDiv div p, .accountNotifications .language .subDiv div p {
+.accountSection .language .subDiv div p, .accountNotifications .language .subDiv div p, .accountPlayback .language .subDiv div p {
   font-weight: lighter;
 }
-.accountSection .language .subDiv div .emailLang, .accountNotifications .language .subDiv div .emailLang {
+.accountSection .language .subDiv div .emailLang, .accountNotifications .language .subDiv div .emailLang, .accountPlayback .language .subDiv div .emailLang {
   font-size: 12px;
+}
+
+.accountPlayback {
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.accountPlayback h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.accountPlayback h2 {
+  margin: 30px 5px 10px;
+  font-weight: normal;
+}
+.accountPlayback .settings {
+  display: flex;
+  margin: 20px 0;
+}
+.accountPlayback .settings .bold.title {
+  margin-left: 0;
+  width: 200px;
+}
+.accountPlayback .settings .subDiv {
+  margin: 0 50px;
+  display: flex;
+}
+.accountPlayback .settings .subDiv input {
+  width: 20px !important;
+}
+.accountPlayback .settings .subDiv p {
+  margin-left: 30px;
+}
+.accountPlayback .settings .subDiv i {
+  margin: auto 20px;
+  color: gray;
+  font-size: 14px;
 }/*# sourceMappingURL=Styles.css.map */

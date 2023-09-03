@@ -36,7 +36,7 @@
 }
 
 // Account
-.accountSection, .accountNotifications {
+.accountSection, .accountNotifications, .accountPlayback {
     @include normalFont;
     padding-top: 50px;
     display: flex;
@@ -59,16 +59,22 @@
         font-weight: bolder;
     }
 
+
+    .light {
+        font-weight: lighter;
+    }
+
     .blue {
         color: rgb(6, 95, 212);
     }
+
 
     .channel {
         border-top: 0.5px solid gray;
         border-bottom: 0.5px solid gray;
     }
 
-    .channel, .account, .general, .emailNotification, .accountPlayback {
+    .channel, .account, .general, .emailNotification {
         padding: 20px 0;
         div {
             display: flex;
@@ -136,4 +142,45 @@
         
        }
     }
+}
+
+// Playback
+.accountPlayback {
+    padding-top: 10px;
+    margin-left: 20px;
+    h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    h2 {
+        margin: 30px 5px 10px;
+        font-weight: normal;
+    }
+    .settings {
+        display: flex;
+        margin: 20px 0;
+        .bold.title {
+            margin-left: 0;
+            width: 200px;
+        }
+        .subDiv {
+            margin: 0 50px;
+            display: flex;
+            input {
+                width: 20px !important;
+            }
+            p {
+                margin-left: 30px;
+            }
+            
+            i {
+                margin: auto 20px;
+                color: gray;
+                font-size: 14px;
+            }
+        }
+    }
+
+
 }
