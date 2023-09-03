@@ -11,16 +11,24 @@ const SettingsNav = () => {
             <h2>Settings</h2>
             <Link
                 className={`${location.pathname === "/account" ? "selected" : ''}`}
-                to={"/account"}>Account</Link>
+                to={"/account"}>Account
+            </Link>
             <Link 
                 className={`${location.pathname === "/account_notifications" ? "selected" : ''}`}
-                to={"/account_notifications"}>Notifications</Link>
+                to={"/account_notifications"}>Notifications
+            </Link>
             <Link 
                 className={`${location.pathname === "/account_playback" ? "selected" : ''}`}
-                to={"/account_playback"}>Playback and performance</Link>
-            <Link to={"/account_privacy"}>Privacy</Link>
-            <Link to={"/account_sharing"}>Connected apps</Link>
-            <Link to={"/account_billing"}>BilLinkng and payments</Link>
+                to={"/account_playback"}>Playback and performance
+            </Link>
+            <Link 
+                className={`${location.pathname === "/account_privacy" ? "selected" : ''}`}
+                to={"/account_privacy"}>Privacy
+            </Link>
+            <Link 
+                className={`${location.pathname === "/account_billing" ? "selected" : ''}`}
+                to={"/account_billing"}>Billing and payments
+            </Link>
             <Link to={"/account_advance"}>Advance settings</Link>
         </nav>
     )
