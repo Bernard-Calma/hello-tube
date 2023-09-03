@@ -36,10 +36,11 @@
 }
 
 // Account
-.accountSection, .accountNotifications, .accountPlayback, .accountPrivacy {
+.accountSection, .accountNotifications, .accountPlayback, .accountPrivacy, .accountBilling {
     @include normalFont;
     padding-top: 50px;
     display: flex;
+    width: 90%;
     flex-direction: column;
     text-align: start;
 
