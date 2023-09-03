@@ -10,7 +10,7 @@ const Privacy = () => {
                 <p>Review <span className="blue">HelloTube Terms of Service</span> and <span className="blue">Google Privacy Policy</span></p>
             </div>
 
-            <div>
+            <div className="general">
                 <div className="subDiv">
                     <p className="bold title"> Subscriptions </p>
                     <ToggleButton 
