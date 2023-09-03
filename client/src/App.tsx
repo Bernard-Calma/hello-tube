@@ -10,7 +10,7 @@ import Main from "./views/Main/Main";
 import { History, Library, LikedVideos, Recommendation, Subscriptions, VideoList } from "./views/Main/components";
 import Settings from "./views/Settings/Settings";
 import Account from "./views/Settings/components/Account";
-import { Notification } from "./views/Settings/components";
+import { Notification, Playback } from "./views/Settings/components";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -34,6 +34,7 @@ const App: React.FC = () => {
             <Route path="playlist" element={<LikedVideos />}/>
             <Route path="account" element={<Account />}/>
             <Route path="account_notifications" element={<Notification />}/>
+            <Route path="account_playback" element={<Playback />}/>
         </Route>
       </Routes>
     </div>

@@ -14,6 +14,8 @@ import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
 import { History, Library, LikedVideos, Subscriptions } from './views/Main/components';
+import { Notification, Playback } from './views/Settings/components';
+import Account from './views/Settings/components/Account';
 
 const router = createBrowserRouter([
   {
@@ -74,9 +76,15 @@ const router = createBrowserRouter([
       },
       {
         path: "account",
+        element: <Account />
       },
       {
-        path: "account_notifications"
+        path: "account_notifications",
+        element: <Notification />
+      },
+      {
+        path: "account_playback",
+        element: <Playback />
       },
       {
         path: "reporthistory"
