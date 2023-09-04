@@ -36,7 +36,7 @@
 }
 
 // Account
-.accountSection, .accountNotifications, .accountPlayback, .accountPrivacy, .accountBilling {
+.accountSection, .accountNotifications, .accountPlayback, .accountPrivacy, .accountBilling, .accountAdvance {
     @include normalFont;
     padding-top: 50px;
     display: flex;
@@ -195,6 +195,51 @@
                 margin-right: 50px;
             }
         }
+    }
+
+}
+
+// Advance
+.accountAdvance {
+    p {
+        margin: auto 0;
+    }
+    
+    .subDiv {
+        div {
+         display: flex;
+         flex-direction: column;    
+        }
+
+        div.copy {
+            flex-direction: row;
+            border: 1px solid rgb(175, 175, 175);
+            border-radius: 10px;
+            padding: 5px 0;
+            text-align: start;
+
+            button {
+                padding: 5px 10px;
+                margin: 0 20px;
+                background-color: rgb(0, 94, 255);
+                color: white;
+                font-weight: bolder;
+                font-size: 14px;
+                border: none;
+                border-radius: 20px;
+                
+            }
+
+            .copyID {
+                font-size: 14px;
+                height: 15px;
+                width: 200px;
+                margin: auto 20px;
+                border: none;
+                
+            }
+        }
+        
     }
 
 }

@@ -14,7 +14,7 @@ import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
 import { History, Library, LikedVideos, Subscriptions } from './views/Main/components';
-import { Billing, Notification, Playback, Privacy } from './views/Settings/components';
+import { Advance, Billing, Notification, Playback, Privacy } from './views/Settings/components';
 import Account from './views/Settings/components/Account';
 
 const router = createBrowserRouter([
@@ -93,6 +93,10 @@ const router = createBrowserRouter([
       {
         path: "account_billing",
         element: <Billing />
+      },
+      {
+        path: "account_advance",
+        element: <Advance />
       },
       {
         path: "reporthistory"
