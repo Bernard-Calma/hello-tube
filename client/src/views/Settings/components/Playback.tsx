@@ -4,7 +4,7 @@ import "../Styles.css"
 const Playback = () => {
     return(
         <div className="accountPlayback">
-            <div>
+            <div className="title">
                 <h3>Playback and performance</h3>
 
                 <h2>Control your video viewing experience</h2>

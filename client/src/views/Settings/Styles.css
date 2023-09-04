@@ -60,6 +60,8 @@
 }
 .accountSection .channel, .accountSection .account, .accountSection .general, .accountSection .emailNotification, .accountNotifications .channel, .accountNotifications .account, .accountNotifications .general, .accountNotifications .emailNotification, .accountPlayback .channel, .accountPlayback .account, .accountPlayback .general, .accountPlayback .emailNotification, .accountPrivacy .channel, .accountPrivacy .account, .accountPrivacy .general, .accountPrivacy .emailNotification, .accountBilling .channel, .accountBilling .account, .accountBilling .general, .accountBilling .emailNotification, .accountAdvance .channel, .accountAdvance .account, .accountAdvance .general, .accountAdvance .emailNotification {
   padding: 20px 0;
+  border-top: 0.5px solid gray;
+  margin: 0;
 }
 .accountSection .channel div, .accountSection .account div, .accountSection .general div, .accountSection .emailNotification div, .accountNotifications .channel div, .accountNotifications .account div, .accountNotifications .general div, .accountNotifications .emailNotification div, .accountPlayback .channel div, .accountPlayback .account div, .accountPlayback .general div, .accountPlayback .emailNotification div, .accountPrivacy .channel div, .accountPrivacy .account div, .accountPrivacy .general div, .accountPrivacy .emailNotification div, .accountBilling .channel div, .accountBilling .account div, .accountBilling .general div, .accountBilling .emailNotification div, .accountAdvance .channel div, .accountAdvance .account div, .accountAdvance .general div, .accountAdvance .emailNotification div {
   display: flex;
@@ -118,6 +120,9 @@
 .accountPlayback h2, .accountPrivacy h2 {
   margin: 30px 5px 10px;
   font-weight: normal;
+}
+.accountPlayback div.title, .accountPrivacy div.title {
+  border-bottom: 0.5px solid gray;
 }
 .accountPlayback .settings, .accountPrivacy .settings {
   display: flex;
