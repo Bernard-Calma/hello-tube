@@ -58,10 +58,13 @@ nav::-webkit-scrollbar-thumb {
 /* Settings */
 /* End of Settings */
 /* Footer */
-footer > p {
+footer p, footer a {
   font-size: 12px;
   font-weight: bold;
   text-align: start;
+}
+footer a {
+  cursor: pointer;
 }
 
 /* End of Footer */
