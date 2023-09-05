@@ -244,15 +244,15 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
   display: none;
 }
 .videosContainer .likedVideos {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 90vh;
   text-align: start;
 }
 .videosContainer .likedVideos .videoPreview {
   position: fixed;
-  height: 90%;
+  height: 85%;
   background-color: rgba(82, 82, 82, 0.282);
   border-radius: 20px;
 }
@@ -319,10 +319,9 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
   width: 100%;
 }
 .videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer {
-  margin: 0;
+  margin: 0 0 10px;
   display: flex;
-  align-items: center;
-  height: 120px;
+  height: auto;
   width: 100%;
 }
 .videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer img {
@@ -338,6 +337,16 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
 }
 .videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .videoMeta {
   width: 100%;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .videoMeta .videoTitle {
+  font-size: 16px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .videoMeta .videoUploadedBy, .videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .videoMeta .videoUploaded {
+  font-size: 12px;
 }
 .videosContainer .likedVideos .likedVideosList .videoListContainer a .videoContainer .videoDetails .videoUploadedBy {
   display: inline;

@@ -272,15 +272,15 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
 
     .likedVideos {
         // border: solid red 1px;
+        margin-top: 30px;
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 90vh;
         text-align: start;
         .videoPreview {
             // border: solid blue 1px;
             position: fixed;
-            height: 90%;
+            height: 85%;
             background-color: rgba(82, 82, 82, 0.282);
             border-radius: 20px;
 
@@ -361,10 +361,10 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
                 a {
                     width: 100%;
                     .videoContainer {
-                        margin: 0;
+                        margin: 0 0 10px;
                         display: flex;
-                        align-items: center;
-                        height: 120px;
+                        // align-items: center;
+                        height: auto;
                         width: 100%;
                         img {
                             height: 100px;
@@ -374,13 +374,24 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
                         .videoDetails {
                             flex: 1;
                             margin-left: 20px;
-
+                            
                             .profileIcon {
                                 display: none;
                             }
 
                             .videoMeta {
                                 width: 100%;
+                                .videoTitle {
+                                    font-size: 16px;
+                                    max-width: 200px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                .videoUploadedBy, .videoUploaded {
+                                    font-size: 12px;
+                                }
+                                
                             }
 
                             .videoUploadedBy {
