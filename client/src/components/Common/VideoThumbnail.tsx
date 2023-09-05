@@ -9,7 +9,7 @@ import { videoNotWorking } from "../../assets/images";
 import { useAppDispatch } from "../../hooks";
 import { setShowVideo } from "../../features/youtube/youtubeSlice";
 
-TimeAgo.addDefaultLocale(en)
+TimeAgo.addLocale(en)
 const timeAgo = new TimeAgo('en-US')
 
 const VideoThumbnail = (props: any) => {
