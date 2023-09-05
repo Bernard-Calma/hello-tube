@@ -11,6 +11,7 @@ import { History, Library, LikedVideos, Recommendation, ReportHistory, Subscript
 import Settings from "./views/Settings/Settings";
 import Account from "./views/Settings/components/Account";
 import { Advance, Billing, Notification, Playback, Privacy } from "./views/Settings/components";
+import Show from "./views/Show/Show";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -21,7 +22,6 @@ const App: React.FC = () => {
   return(
     <div className='App'>
       <Header />
-      {/* <Outlet /> */}
       <Routes>
         <Route path="/" element={<Main />}>
             <Route path="/" element={<>
@@ -40,6 +40,7 @@ const App: React.FC = () => {
             <Route path="account_advance" element={<Advance />}/>
             <Route path="reporthistory" element={<ReportHistory />}/>
         </Route>
+        <Route path="watch/:id" element={<Show />}/>
       </Routes>
     </div>
   )

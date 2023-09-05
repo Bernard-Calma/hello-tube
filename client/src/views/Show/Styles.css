@@ -4,7 +4,7 @@
   height: auto;
 }
 .showContainer .showVideoContainer {
-  max-width: 1200px;
+  max-width: 80vw;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -14,7 +14,8 @@
   flex: 4;
 }
 .showContainer .showVideoContainer img {
-  max-height: 720px;
+  width: auto;
+  max-height: 70vh;
 }
 .showContainer .showVideoContainer .videoDetails h2 {
   text-align: start;

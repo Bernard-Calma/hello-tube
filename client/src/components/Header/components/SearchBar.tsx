@@ -30,7 +30,7 @@ const SearchBar = () => {
         {
             searchInput
             ?  <Link 
-                    to={`results?search_query=${searchInput}`}
+                    to={`watch?search_query=${searchInput}`}
                     className="searchDiv"
                 >
                     <i className="fa-sharp fa-solid fa-magnifying-glass"/>

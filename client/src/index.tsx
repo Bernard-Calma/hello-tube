@@ -110,7 +110,7 @@ const router = createBrowserRouter([
       {
         path: "watch/:videoId",
         element: <Show /> 
-      },
+      }
     ]
   }
 ])

@@ -22,10 +22,9 @@ const Main: React.FC = () => {
                 ? <Navigation />
                 : <SettingsNav />
             }
-            {/* <SettingsNav /> */}
             <div className='videosContainer'>
                 <Outlet />
-                {/* {
+                {
                     searchQuery
                     ? <SearchedVideoList 
                     searchQuery = {searchQuery}
@@ -34,7 +33,7 @@ const Main: React.FC = () => {
                     <Recommendation />
                     <VideoList/>
                     </>
-                } */}
+                }
                 
             </div>
         </main>
