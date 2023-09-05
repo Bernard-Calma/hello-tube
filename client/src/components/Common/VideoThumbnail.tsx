@@ -24,7 +24,8 @@ const VideoThumbnail = (props: any) => {
         title,
         channelTitle,
         publishTime,
-        thumbnails
+        thumbnails,
+        description
     } = snippet
 
     const {url} = thumbnails.high
@@ -55,6 +56,7 @@ const VideoThumbnail = (props: any) => {
                          <p className="videoUploadedBy">{channelTitle}</p>
                          {/* <p className="videoViews">{views} views</p> */}
                          <p className="videoUploaded">• {timeAgo.format(new Date(publishTime))}</p>
+                         <p className="videoDescription" style={{display: "none"}}>{description}</p>
                      </div>
                  </div>
              </div>

@@ -56,7 +56,7 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
 .videosContainer .history {
   width: 100%;
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .videosContainer .history .header {
   padding: 5px 0 0;
@@ -115,8 +115,20 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
   padding-left: 20px;
 }
 .videosContainer .history .videoListContainer a .videoContainer .videoDetails .videoMeta .videoTitle {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: bold;
+}
+.videosContainer .history .videoListContainer a .videoContainer .videoDetails .videoMeta .videoUploadedBy, .videosContainer .history .videoListContainer a .videoContainer .videoDetails .videoMeta .videoDescription {
+  position: relative;
+  font-size: 14px;
+  margin: 0;
+}
+.videosContainer .history .videoListContainer a .videoContainer .videoDetails .videoMeta .videoUploaded {
+  display: none;
+}
+.videosContainer .history .videoListContainer a .videoContainer .videoDetails .videoMeta .videoDescription {
+  display: inline !important;
+  margin: 10px 0;
 }
 .videosContainer .history .historySettings {
   font-family: sans-serif;
