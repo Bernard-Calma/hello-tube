@@ -39,7 +39,11 @@ const Settings = () => {
             {
                 solidIcons.map(icon =>  
                     <Icon 
-                        view = {"settings"}
+                        view = {`${
+                            icon.text === "Report History"
+                            ? "main"
+                            : "settings"
+                        }`}
                         key = {icon.id}
                         containerClass={icon.containerClass}
                         icon = {icon.icon}

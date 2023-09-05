@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 import { getVideo } from "./features/youtube/youtubeSlice";
 import { AppDispatch } from "./store";
 import Main from "./views/Main/Main";
-import { History, Library, LikedVideos, Recommendation, Subscriptions, VideoList } from "./views/Main/components";
+import { History, Library, LikedVideos, Recommendation, ReportHistory, Subscriptions, VideoList } from "./views/Main/components";
 import Settings from "./views/Settings/Settings";
 import Account from "./views/Settings/components/Account";
 import { Advance, Billing, Notification, Playback, Privacy } from "./views/Settings/components";
@@ -38,6 +38,7 @@ const App: React.FC = () => {
             <Route path="account_privacy" element={<Privacy />}/>
             <Route path="account_billing" element={<Billing />}/>
             <Route path="account_advance" element={<Advance />}/>
+            <Route path="reporthistory" element={<ReportHistory />}/>
         </Route>
       </Routes>
     </div>

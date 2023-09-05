@@ -31,7 +31,10 @@ const Icon = ({containerClass, icon, text, category, view}: IconProps) => {
                     ? "fashion"
                 :text === "Settings" 
                     ? "account"
+                :text === "Report History" 
+                    ? "reporthistory"
                     : text}`
+                    
         }>
             <i className={`fa-solid fa-${icon}`}/><span>{text}</span>
         </Link>

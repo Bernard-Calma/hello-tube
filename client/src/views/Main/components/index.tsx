@@ -5,6 +5,7 @@ import Subscriptions from "./Subscriptions";
 import Library from "./Library";
 import History from "./History";
 import LikedVideos from "./LikedVideos";
+import ReportHistory from "./ReportHistory";
 
 export {
     Recommendation,
@@ -14,6 +15,7 @@ export {
     Library,
     History,
     LikedVideos,
-    // Explore
+    // Explore,
+    ReportHistory
     
 }

@@ -45,15 +45,6 @@
 .accountSection p, .accountNotifications p, .accountPlayback p, .accountPrivacy p, .accountBilling p, .accountAdvance p {
   font-size: 14px;
 }
-.accountSection .bold, .accountNotifications .bold, .accountPlayback .bold, .accountPrivacy .bold, .accountBilling .bold, .accountAdvance .bold {
-  font-weight: bolder;
-}
-.accountSection .light, .accountNotifications .light, .accountPlayback .light, .accountPrivacy .light, .accountBilling .light, .accountAdvance .light {
-  font-weight: lighter;
-}
-.accountSection .blue, .accountNotifications .blue, .accountPlayback .blue, .accountPrivacy .blue, .accountBilling .blue, .accountAdvance .blue {
-  color: rgb(6, 95, 212);
-}
 .accountSection .channel, .accountNotifications .channel, .accountPlayback .channel, .accountPrivacy .channel, .accountBilling .channel, .accountAdvance .channel {
   border-top: 0.5px solid gray;
   border-bottom: 0.5px solid gray;

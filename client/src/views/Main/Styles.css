@@ -1,8 +1,20 @@
-main, .recommendationContainer, .videosContainer, .videoListContainer {
+main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHistory {
   position: relative;
   display: flex;
   align-items: center;
   align-items: flex-start;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.blue {
+  color: rgb(6, 95, 212);
 }
 
 /* Videos Container */
@@ -293,4 +305,38 @@ main, .recommendationContainer, .videosContainer, .videoListContainer {
   margin: auto;
 }
 
-/* End of Recommendation *//*# sourceMappingURL=Styles.css.map */
+/* End of Recommendation */
+.reportHistory {
+  display: flex;
+  flex-direction: column;
+}
+.reportHistory p, .reportHistory ul, .reportHistory li {
+  text-align: start;
+  margin: 5px 0;
+}
+.reportHistory ul {
+  padding-left: 15px;
+}
+.reportHistory ul li {
+  font-size: 14px;
+}
+.reportHistory div {
+  border-top: 0.5px solid gray;
+  width: 90%;
+  position: relative;
+}
+.reportHistory div select {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  margin: 0;
+  padding-right: 0;
+  border: none;
+  font-weight: bolder;
+  font-size: 18px;
+  outline: none;
+}
+.reportHistory div p {
+  margin-top: 50px;
+  text-align: center;
+}/*# sourceMappingURL=Styles.css.map */
