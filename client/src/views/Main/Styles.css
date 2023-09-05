@@ -56,6 +56,7 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
 .videosContainer .history {
   width: 100%;
   display: flex;
+  margin-top: 50px;
 }
 .videosContainer .history .header {
   padding: 5px 0 0;
@@ -76,7 +77,10 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
   justify-content: center;
   align-items: center;
 }
-.videosContainer .history .header h2 {
+.videosContainer .history .historyContainer .header {
+  align-self: flex-start;
+}
+.videosContainer .history .historyContainer .header h1, .videosContainer .history .historyContainer .header h2 {
   font-size: 18px;
   font-weight: 500;
   text-align: start;
@@ -183,14 +187,48 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
   color: gray;
   font-weight: bolder;
 }
+.videosContainer .library {
+  margin-top: 50px;
+  max-width: 90%;
+}
 .videosContainer .library .header {
   text-align: start;
   font-size: 8px;
+  margin: 15px 0;
 }
 .videosContainer .library .header h1 {
   display: inline;
 }
-.videosContainer .library .videoListContainer > a:nth-child(n+9) {
+.videosContainer .library .videoListContainer {
+  border-bottom: 0.5px solid gray;
+  max-width: 90%;
+}
+.videosContainer .library .videoListContainer a {
+  margin: 0;
+}
+.videosContainer .library .videoListContainer a .videoContainer {
+  margin: 0 10px 20px;
+  width: 200px;
+  height: auto;
+}
+.videosContainer .library .videoListContainer a .videoContainer img {
+  width: 200px;
+  height: 120px;
+}
+.videosContainer .library .videoListContainer a .videoContainer .videoDetails div > h1.profileIcon {
+  display: none;
+}
+.videosContainer .library .videoListContainer a .videoContainer .videoDetails .videoMeta .videoTitle {
+  font-size: 16px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.videosContainer .library .videoListContainer a .videoContainer .videoDetails .videoMeta .videoUploadedBy, .videosContainer .library .videoListContainer a .videoContainer .videoDetails .videoMeta .videoUploaded {
+  font-size: 12px;
+}
+.videosContainer .library .videoListContainer a:nth-child(n+9) {
   display: none;
 }
 .videosContainer .likedVideos {

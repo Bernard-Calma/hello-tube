@@ -56,6 +56,7 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
        @include mainSubHeader();
        width: 100%;
        display: flex;
+       margin-top: 50px;
 
        div{
         display: flex;
@@ -66,15 +67,18 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
         flex: 1;
         justify-content: center;
         align-items: center;
-       }
 
-       .header{
-        h2 {
+        .header{
+            align-self: flex-start;
+            h1,h2 {
             font-size: 18px;
             font-weight: 500;
             text-align: start;
            }
        }
+       }
+
+       
 
        .videoListContainer {
         flex: 2;
@@ -201,16 +205,53 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
 
     .library {
         // Library styles goes here
+        margin-top: 50px;
+        max-width: 90%;
         .header {
             text-align: start;
             font-size: 8px;
+            margin: 15px 0;
             h1 {
                 display: inline;
             }
         }
 
-        .videoListContainer > a:nth-child(n+9   ) {
-            display: none;
+        .videoListContainer {
+            border-bottom: 0.5px solid gray;
+            max-width: 90%;
+            a {
+                margin: 0;
+                .videoContainer {
+                    margin: 0 10px 20px;
+                    width: 200px;
+                    height: auto;
+                    img {
+                        width: 200px;
+                        height: 120px;
+                    }
+
+                    .videoDetails {
+                        div > h1.profileIcon {
+                            display: none;
+                        }
+                        .videoMeta {
+                            .videoTitle {
+                                font-size: 16px;
+                                max-width: 200px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            .videoUploadedBy, .videoUploaded {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            a:nth-child(n+9   )  {
+                display: none;
+            }
         }
     }
 

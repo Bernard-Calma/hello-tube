@@ -20,18 +20,18 @@ const Settings = () => {
             icon: "font-awesome",
             text: "Report History"
         },
-        {
-            id: 2,
-            containerClass: "navIcons",
-            icon: "circle-question",
-            text: "Help"
-        },
-        {
-            id: 3,
-            containerClass: "navIcons",
-            icon: "message",
-            text: "Send Feedback"
-        },
+        // {
+        //     id: 2,
+        //     containerClass: "navIcons",
+        //     icon: "circle-question",
+        //     text: "Help"
+        // },
+        // {
+        //     id: 3,
+        //     containerClass: "navIcons",
+        //     icon: "message",
+        //     text: "Send Feedback"
+        // },
     ]
     
     return(
