@@ -8,7 +8,8 @@ type RequestState = "pending" | "fulfilled" | "rejected"
 export interface youtubeState {
     videos: Array<Youtube>,
     showVideo?: Youtube | undefined,
-    searchQuery?: string | null
+    searchQuery?: string | null,
+    searchedVideos?: Array<Youtube>,
     status: RequestState
 }
 
@@ -39,7 +40,7 @@ export const searchVideos = createAsyncThunk("youtube/searchVideos", async (sear
             method: "GET",
             url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmoen-O_vRoOlDgf4uHMBTipldhNTgSTg&q=${searchInput}&part=snippet&maxResults=50`,
         })
-        // console.log(res.data.items[0])
+        console.log(res.data.items[0])
         return res.data.items
 
 })

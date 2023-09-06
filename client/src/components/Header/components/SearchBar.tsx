@@ -2,6 +2,7 @@ import {useState} from "react"
 import { useAppDispatch } from "../../../hooks"
 import { searchVideos } from "../../../features/youtube/youtubeSlice";
 import { Link } from "react-router-dom";
+import { changeViewSearch } from "../../../features/views/viewSlice";
 
 const SearchBar = () => {
     const dispatch = useAppDispatch();
@@ -10,6 +11,7 @@ const SearchBar = () => {
     const handleFormSubmit = (e: React.FormEvent) => {
             e.preventDefault();
             // console.log("Search submitted", searchInput)
+            dispatch(changeViewSearch())
             dispatch(searchVideos(searchInput))
         }
 
@@ -20,7 +22,7 @@ const SearchBar = () => {
     return (
     <div 
         className="searchBarContainer"
-        onSubmit={handleFormSubmit}
+        onClick={handleFormSubmit}
     >
         <input 
             className="searchInput"
@@ -30,7 +32,7 @@ const SearchBar = () => {
         {
             searchInput
             ?  <Link 
-                    to={`watch?search_query=${searchInput}`}
+                    to={`results/${searchInput}`}
                     className="searchDiv"
                 >
                     <i className="fa-sharp fa-solid fa-magnifying-glass"/>

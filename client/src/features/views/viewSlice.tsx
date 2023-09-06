@@ -17,13 +17,17 @@ export const viewSlice = createSlice({
         },
         changeViewSettings: (state) => {
             state.view = "Settings";
+        },
+        changeViewSearch: (state) => {
+            state.view = "Search"
         }
     }
 })
 
 export const {
     changeViewMain,
-    changeViewSettings
+    changeViewSettings,
+    changeViewSearch
 } = viewSlice.actions
 
 export default viewSlice.reducer;

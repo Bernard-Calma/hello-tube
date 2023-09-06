@@ -13,7 +13,7 @@ import './index.css';
 import App from './App';
 import Main from './views/Main/Main';
 import Show from './views/Show/Show';
-import { History, Library, LikedVideos, Subscriptions } from './views/Main/components';
+import { History, Library, LikedVideos, SearchedVideoList, Subscriptions } from './views/Main/components';
 import { Advance, Billing, Notification, Playback, Privacy } from './views/Settings/components';
 import Account from './views/Settings/components/Account';
 
@@ -110,6 +110,10 @@ const router = createBrowserRouter([
       {
         path: "watch/:videoId",
         element: <Show /> 
+      },
+      {
+        path: "results/:searchParams",
+        element: <SearchedVideoList />
       }
     ]
   }

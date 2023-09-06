@@ -25,10 +25,8 @@ const Main: React.FC = () => {
             <div className='videosContainer'>
                 <Outlet />
                 {
-                    searchQuery
-                    ? <SearchedVideoList 
-                    searchQuery = {searchQuery}
-                    />
+                    view === "Search"
+                    ? <SearchedVideoList/>
                     : <>
                     <Recommendation />
                     <VideoList/>
