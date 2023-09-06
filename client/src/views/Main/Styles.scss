@@ -460,3 +460,56 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
         };
     }
 }
+
+// SearchedVideos
+.searchResultContainer {
+    margin: 20px 0 !important;
+    width: 100%;
+
+    .videoListContainer {
+        a {
+            margin: 0;
+            @include normalFont();
+            .videoContainer {
+                margin: 10px 0;
+
+                .videoDetails {
+                    margin-left: 20px;
+                    position: relative;
+
+                    .profileIcon {
+                        position: absolute;
+                        top: 35%;
+                        font-size: 14px;
+                        padding: 5px 0;
+                        color: white;
+                        background-color: black;
+                    }
+
+                    .videoMeta {
+                        .videoTitle {
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-top: 10px;
+                        }
+    
+                        .videoUploadedBy {
+                            position: absolute;
+                            font-size: 12px;
+                            top: 40%;
+                            left: 40px;
+                        }
+    
+                        .videoDescription {
+                            display: block !important;
+                            font-size: 14px;
+                            position: absolute;
+                            top: 50%;
+                        } 
+                    }
+
+                }
+            }
+        }
+    }
+}

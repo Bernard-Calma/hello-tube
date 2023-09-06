@@ -398,4 +398,46 @@ main, .recommendationContainer, .videosContainer, .videoListContainer, .reportHi
 .reportHistory div p {
   margin-top: 50px;
   text-align: center;
+}
+
+.searchResultContainer {
+  margin: 20px 0 !important;
+  width: 100%;
+}
+.searchResultContainer .videoListContainer a {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.searchResultContainer .videoListContainer a .videoContainer {
+  margin: 10px 0;
+}
+.searchResultContainer .videoListContainer a .videoContainer .videoDetails {
+  margin-left: 20px;
+  position: relative;
+}
+.searchResultContainer .videoListContainer a .videoContainer .videoDetails .profileIcon {
+  position: absolute;
+  top: 35%;
+  font-size: 14px;
+  padding: 5px 0;
+  color: white;
+  background-color: black;
+}
+.searchResultContainer .videoListContainer a .videoContainer .videoDetails .videoMeta .videoTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.searchResultContainer .videoListContainer a .videoContainer .videoDetails .videoMeta .videoUploadedBy {
+  position: absolute;
+  font-size: 12px;
+  top: 40%;
+  left: 40px;
+}
+.searchResultContainer .videoListContainer a .videoContainer .videoDetails .videoMeta .videoDescription {
+  display: block !important;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
 }/*# sourceMappingURL=Styles.css.map */

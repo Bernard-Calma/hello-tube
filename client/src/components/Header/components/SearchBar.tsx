@@ -22,7 +22,6 @@ const SearchBar = () => {
     return (
     <div 
         className="searchBarContainer"
-        onClick={handleFormSubmit}
     >
         <input 
             className="searchInput"
@@ -35,7 +34,9 @@ const SearchBar = () => {
                     to={`results/${searchInput}`}
                     className="searchDiv"
                 >
-                    <i className="fa-sharp fa-solid fa-magnifying-glass"/>
+                    <i 
+                        onClick={handleFormSubmit}
+                        className="fa-sharp fa-solid fa-magnifying-glass"/>
                 </Link>
             : <div className="searchDiv"> 
                 <i className="fa-sharp fa-solid fa-magnifying-glass"/>
