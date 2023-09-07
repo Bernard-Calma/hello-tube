@@ -29,7 +29,7 @@ export const getVideo = createAsyncThunk<Array<Youtube>>("youtube/getvideos", as
         // console.log(res.data.items[0])
         return res.data.items
     } catch (err) {
-        console.log("Add Account Error: ", err)
+        // console.log("Add Account Error: ", err)
         return rejectWithValue("Error getting bills")
     }
 })
@@ -40,7 +40,7 @@ export const searchVideos = createAsyncThunk("youtube/searchVideos", async (sear
             method: "GET",
             url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmoen-O_vRoOlDgf4uHMBTipldhNTgSTg&q=${searchInput}&part=snippet&maxResults=50`,
         })
-        console.log(res.data.items[0])
+        // console.log(res.data.items[0])
         return res.data.items
 
 })
