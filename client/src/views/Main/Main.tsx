@@ -18,7 +18,7 @@ const Main: React.FC = () => {
     return(
         <main>
             {
-                view === "Main"
+                view === "Main" || "Search"
                 ? <Navigation />
                 : <SettingsNav />
             }

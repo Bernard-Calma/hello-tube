@@ -35,7 +35,7 @@ export const getVideo = createAsyncThunk<Array<Youtube>>("youtube/getvideos", as
 })
 
 export const searchVideos = createAsyncThunk("youtube/searchVideos", async (searchInput: string, thunkAPI) => {
-    console.log("Search Input", searchInput)
+    // console.log("Search Input", searchInput)
         const res = await axios({
             method: "GET",
             url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmoen-O_vRoOlDgf4uHMBTipldhNTgSTg&q=${searchInput}&part=snippet&maxResults=50`,
