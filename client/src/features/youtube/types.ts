@@ -31,7 +31,7 @@ export type Youtube = {
     etag: string;
     id: {
         kind: string;
-        channelId: string;
+        videoId: string;
     };
     snippet: {
         publishedAt: Date;

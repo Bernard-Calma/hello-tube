@@ -14,7 +14,8 @@ const Video:React.FC = () => {
     } = useAppSelector(store => store.youtube)
     if (showVideo?.snippet) {
         const {
-            snippet
+            snippet,
+            id
         } = showVideo;
         const {
             title,
@@ -23,8 +24,7 @@ const Video:React.FC = () => {
             publishTime,
             thumbnails
         } = snippet
-    
-        const {url} = thumbnails.high
+        const url = id.videoId
 
         const handleImageError = (e: any) => {
             e.target.src = videoNotWorking;
@@ -32,11 +32,13 @@ const Video:React.FC = () => {
 
         return (
             <div className="showVideoContainer">
-                <img 
-                    src={url} 
-                    alt={title + " image"}
-                    onError={handleImageError}
-                />
+                <iframe 
+                    width="auto" 
+                    height="auto" 
+                    src = {`https://www.youtube.com/embed/${url}`}
+                    title = "YouTube video player" 
+                    allowFullScreen={true}>
+                </iframe>
                 <div className="videoDetails">
                     <h2 className="videoTitle">{title}</h2>
                     <div className="videoEngagement">
