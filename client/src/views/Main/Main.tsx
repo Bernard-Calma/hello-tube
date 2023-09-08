@@ -18,19 +18,21 @@ const Main: React.FC = () => {
     return(
         <main>
             {
-                view === "Main" || "Search"
-                ? <Navigation />
-                : <SettingsNav />
+                view === "Settings"
+                ? <SettingsNav />
+                : <Navigation />
             }
             <div className='videosContainer'>
                 <Outlet />
                 {
                     view === "Search"
                     ? <SearchedVideoList/>
-                    : <>
-                    <Recommendation />
-                    <VideoList/>
+                    : view === "Main" 
+                    ?<>
+                        <Recommendation />
+                        <VideoList/>
                     </>
+                    : <></>
                 }
                 
             </div>
